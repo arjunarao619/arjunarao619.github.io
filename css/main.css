@@ -1,0 +1,534 @@
+/* Global page and element settings ----------------------------------------------------- */
+body {
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #FFFFFF;
+}
+
+/* Colors */
+.dark-blue {
+  color: #ffffff !important;
+}
+
+
+
+#badge-more {
+  background-color: #eeeeee;
+  color: #212121;
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+
+/* Font style */
+.montserrat {
+  font-family: "Montserrat", Helvetica, sans-serif !important;
+  color: #656565;
+}
+.montserrat2 {
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 10rem;
+  color: #656565;
+}
+
+/* Degree area -------------------------------------------------------------------- */
+#education {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#education li {
+  margin-bottom: 1rem;
+}
+.pad{
+  margin-top: 20px;
+}
+.university {
+  color: gray;
+  font-size: large;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #20364c;
+  font-weight: 500;
+}
+
+h1 {
+  margin-bottom: 4rem;
+}
+
+h2, h3 {
+  margin: 0 0 2rem !important;
+  color: slategray;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+h4, h5, h6 {
+  color: slategray !important;
+}
+
+.panel-heading h5 {
+  font-style: italic;
+  font-weight: 500;
+  color: #656565 !important;
+}
+
+#projects .panel-heading h5 {
+  font-weight: 500;
+  color: #656565 !important;
+}
+
+p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
+  font-size: 1.5rem;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+dt {
+  font-weight: 600;
+}
+
+blockquote {
+  border-left-color: slategray;
+  color: slategray;
+}
+
+blockquote blockquote {
+  border-left: none;
+  margin: 1.5rem;
+  font-style: italic;
+}
+
+cite {
+  font-size: 1.5rem !important;
+  display: block;
+  margin-top: 1rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+blockquote footer {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  text-indent: -1.8rem;
+}
+
+.publications {
+  list-style-type: none;
+  padding-left: 2.5rem;
+}
+
+.publications li {
+  margin-left: 2rem;
+  text-indent: -2.5rem;
+  ;
+}
+
+/* Links */
+#main-container a {
+  color: #B71C1C;
+  font-weight: 500;
+}
+
+
+
+#main-container a:hover {
+  color: #EF5350;
+  border-bottom: 1px dashed #EF5350;
+  text-decoration: blueviolet;
+  padding-bottom: 2px;
+}
+
+/* Contact info area, index.html page ------------------------------------------------- */
+#title {
+  color: #20364c;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#program {
+  color: gray;
+  text-align: center;
+  margin: auto;
+}
+.myface
+{
+  margin: auto;
+  border-radius: 50%;
+}
+iframe {
+  padding: 3px;
+  border: 1px solid lightgray;
+}
+
+/* Format the nav  ---------------------------------------------------------- */
+nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #616161;
+  font-weight: 500;
+}
+
+.nav .montserrat:hover,
+.nav .montserrat:focus-within,
+.nav .montserrat:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus-within,
+.navbar-inverse .navbar-nav>li>a:focus {
+  background: #FAFAFA !important; /*nav block color on hovering*/
+  border-radius: 1px;
+  color: #212121 !important; /* This is for the text color on hovering navbar */
+}
+.navbar-collapse{
+  background: #F5F5F5;
+}
+.navbar-default .navbar-nav>li>a:active {
+  background: white !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-default .navbar-nav>.open>a {
+    background: white !important;
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+  }
+
+  /* hover effects */
+  /* Bubble Bottom */
+  .hvr-bubble-bottom {
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    color: #656565;
+    position: relative;
+  }
+
+  .hvr-bubble-bottom:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    left: calc(50% - 10px);
+    bottom: 0;
+    border-width: 10px 10px 0 10px;
+    border-color: white transparent transparent transparent;
+  }
+
+  .hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: darkslategray !important;
+  }
+}
+
+.navbar-inverse {
+  background: #ffffff;
+}
+
+.navbar-brand {
+  font-size: 3rem !important;
+  font-weight: 500;
+  color: #212121 !important;
+}
+
+/* Navbar link size */
+.navbar-default .navbar-nav>li>a {
+  font-size: 1.5rem !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #616161;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.active {
+  /* background: white; */
+  border-radius: 2px;
+}
+
+.navbar .dropdown-menu {
+  margin-right: -1px;
+}
+
+/* Utility classes for positioning content ----------------------------------- */
+.padding-left-1 {
+  padding-left: 1rem !important;
+}
+
+.padding-left-2 {
+  padding-left: 2rem !important;
+}
+
+.push-down-1 {
+  margin-top: 1rem !important;
+}
+
+.push-down-2 {
+  margin-top: 2rem !important;
+}
+
+.push-down-3 {
+  margin-top: 3rem !important;
+}
+
+.push-down-4 {
+  margin-top: 4rem !important;
+}
+
+.pull-up-1 {
+  margin-top: -1rem !important;
+}
+
+.pull-up-2 {
+  margin-top: -1rem !important;
+}
+
+.pull-up-3 {
+  margin-top: -1rem !important;
+}
+
+.spacer-div-3 {
+  height: 45px !important;
+}
+
+#link-to-docs,
+#link-to-teaching-philosophy {
+  color: #656565;
+}
+
+#link-to-docs:hover,
+#link-to-docs:active,
+#link-to-docs:visited,
+#link-to-docs:focus {
+  border: 1px solid #656565 !important;
+  padding-bottom: 6px !important;
+  background: transparent !important;
+}
+
+/* Setting Lines after headers */
+h3 {
+  position: relative;
+}
+
+h3 span {
+  background-color: white;
+  padding-right: 10px;
+}
+
+h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 2px solid slategray;
+  z-index: -1;
+}
+
+/* Format the footer ---------------------------------------------------------- */
+footer {
+  padding-bottom: 2rem;
+}
+
+/* Format the social-professional network icons ------------------------------ */
+.social-icons {
+  list-style-type: none;
+  color: #212121;
+  
+}
+
+.social-icons li {
+  padding-left: 2rem;
+  display: inline-block;
+  color: #212121;
+}
+
+.social-icons li a {
+  color: #263238;
+}
+
+.social-icons li a:hover {
+  opacity: .8;
+  text-decoration: none !important;
+  
+}
+
+/* Projects page --------------------------------------------------------- */
+#projects .panel {
+  margin-left: 2rem;
+}
+
+#projects .panel-default {
+  border-radius: 3px;
+}
+
+#projects .panel-default {
+  border-radius: 3px;
+}
+
+#projects .panel-heading {
+  border-bottom: none;
+}
+
+#projects .panel-heading,
+#projects .panel-footer {
+  text-align: center;
+  background: #ffffff;
+  padding: 2rem;
+}
+
+#projects .panel-footer {
+  border-top: none;
+}
+
+#projects .panel-heading h5 {
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.panel-default .panel-heading a:hover {
+  padding-bottom: 0px !important;
+}
+
+/* All Links panels ---------------------------------------------- */
+#links .panel-default {
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+#links .panel-heading {
+  border-bottom: none;
+}
+
+#links img {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  width: 100px;
+  padding: 3px;
+  /* border: 1px solid silver; */
+}
+
+/* Lists ------------------------------------------------------------- */
+/* Add bottom margin to the description lists */
+dd {
+  margin-bottom: 1rem;
+}
+
+/* Set the anchor element to display block */
+.list-group li a {
+  display: block;
+}
+
+/* Narrow the viewport ----------------------------------------------- */
+/* Customize container */
+@media only screen and (min-width: 767px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media only screen and (min-width: 768px) {
+
+  /* Remove the padding we set earlier */
+  .container {
+    max-width: 900px;
+  }
+}
+
+/* Accordion panels ----------------------------------------------------- */
+/* plus glyph for showing collapsible panels */
+.panel-heading .accordion-plus-toggle:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f068";
+  float: right;
+  color: #212121;
+}
+
+.panel-heading .accordion-plus-toggle.collapsed:before {
+  content: "\f067";
+  color: #212121;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* arrow glyph for showing collapsible panels */
+.panel-heading .accordion-arrow-toggle:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  float: right;
+  color: #212121;
+}
+
+.panel-heading .accordion-arrow-toggle.collapsed:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+  color: #212121;
+}
+
+/* sets the link to the width of the entire panel title */
+.panel-title>a {
+  display: block;
+}
+
+/* Back to top button */
+
+/* Back to top button ----------------------------------------------------- */
+#topper {
+  display: none;
+  position: fixed;
+  bottom: 300px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #1585cf;
+  color: #212121;
+  padding: 12px 6px 12px 6px;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+#topper:hover {
+  background-color: #1585cf;
+  opacity: .8;
+}
