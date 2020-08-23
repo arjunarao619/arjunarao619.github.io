@@ -164,7 +164,7 @@ blockquote footer {
 .myface
 {
   margin: auto;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 iframe {
   padding: 3px;
