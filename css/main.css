@@ -63,6 +63,9 @@ h2, h3 {
   margin: 0 0 2rem !important;
   color: slategray;
 }
+h1{
+  text-align: center;
+}
 
 h4 {
   text-transform: uppercase;
