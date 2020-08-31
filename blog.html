@@ -59,6 +59,380 @@
          font-weight: bold !important;
       }
 
+      body {
+          background: #FEFEFE;
+          font-family: "lora",sans;
+          text-rendering: optimizeLegibility;
+          line-height: 170%;
+          margin: 0px;
+      }
+      
+      div.container {
+          padding-left: 1em;
+          padding-right: 1em;
+          color: #222;
+          padding-top: 1.5em;
+      }
+      
+      
+      div.outer {
+          margin-left: auto;
+          margin-right: auto;
+          padding-bottom: 1em;
+          max-width: 60em;
+      }
+      
+      div.top {
+          max-width: 60em;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      
+      div.topouter {
+          width: 100%;
+          min-height: 1.5em;
+          padding: 1em 0em 1em 0em;
+          z-index: 10;
+          background: #FFF;
+          border-bottom: 1px solid #D0D0D0;
+          box-shadow: 0 0 12px rgba(0,0,0,.1);
+      }
+      
+      div.dropdown {
+          font-variant: small-caps;
+      
+      }
+      
+      div.links a {
+          margin-right: .8em;
+      }
+      
+      a.button {
+          display: inline-block;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          border: 1px solid #000;
+          border-radius: .25em;
+          padding: .2em .4em;
+          color: #fff;
+          background: #633;
+          transition: .5s;
+      }
+      
+      a.button:hover {
+          color: #fff;
+          background: #844;
+          transition: .5s;
+      }
+      
+      
+
+      
+      div.links {
+          float: right;
+          font-size: 120%;
+          padding-right: 2em;
+      }
+      
+      
+      div.boxed {
+          border-radius: 5px;
+          background: #FFFFFF;
+          padding: 1em;
+          box-shadow:0 0 12px rgba(0,0,0,0.05);
+          -moz-box-shadow:0 0 12px rgba(0,0,0,0.05);
+          -webkit-box-shadow:0 0 12px rgba(0,0,0,0.05);
+      }
+      
+      div.header {
+          border-bottom: #DDDDDD solid 2px;
+          padding-bottom: .5em;
+          padding-top: .2em;
+          line-height: 100%;
+          font-size: 2em;
+      }
+      
+      span.header {
+          font-size: 1.5em;
+          line-height: 100%;
+      }
+      
+      p {
+          margin-top: 0px;
+          margin-bottom: .7em;
+      }
+      
+      li {
+          padding-bottom: 1em;
+      }
+      
+      div.inner {
+          padding-top: .5em;
+          width: 100%;
+          font-size: 14pt;
+          transform: rotate(0deg);
+          position: relative;
+      }
+      
+      
+      div.footer {
+          text-align: center;
+          padding-top: 3em;
+          font-size: 0.5em;
+      }
+      
+      div.rightouter {
+          width: 18em; 
+          display: inline; 
+          float: right;
+      }
+      
+      div.contact {
+          display: none;
+      }
+      
+      div.rightinner {
+          padding-left: 10px;
+      }
+      
+      div.rightelement {
+          background: #F8F8F8;
+          padding: 10px;
+          border-radius: 4px;
+          border-bottom: 1px solid #D0D0D0;
+          border-right: 1px solid #D0D0D0;
+          box-shadow:0 0 6px rgba(0,0,0,0.1);
+          -moz-box-shadow:0 0 6px rgba(0,0,0,0.1);
+          -webkit-box-shadow:0 0 6px rgba(0,0,0,0.1);
+          width: 16em;
+          align: right;
+      }
+      
+      div.rightelement img {
+          border-radius: 5%;
+      }
+      
+      div.contact img {
+          border-radius: 5%;
+      }
+      
+      label {
+          cursor: pointer;
+      }
+      
+      div.publication label {
+          float: right;
+      }
+      
+      div.pubstuff {
+          float: right;
+      }
+      
+      
+      div.righthead {
+          font-size: 24px;
+      }
+      
+      a {
+          text-decoration: none;
+          color: #EF5350;
+      }
+      
+      a:hover {
+          color: #EF5350;
+      }
+      
+      .abstract {
+          padding-right: 5.5em;
+          padding-left: 3em;
+          margin-top: 1em;
+      }
+      
+      div.publication p {
+          margin-top: 0px;
+          margin-bottom: .4em;
+      }
+      
+      div.publication > p:first-child {
+          margin-right: 10em;
+      }
+      
+      span.rightlinks {
+          float: right;
+      }
+      
+      div.menuwrap {
+          
+      }
+      
+      div.menu {
+          background: #f8f8f8; 
+          box-shadow: 2px -2px 2px rgba(0,0,0,0.1); 
+          -moz-box-shadow: 2px -2px 2px rgba(0,0,0,0.1);
+          -webkit-box-shadow: 2px -2px 2px rgba(0,0,0,0.1);
+          margin-left: 0.5em; 
+          width: 6em; 
+          float: left; 
+          padding: 0.2em; 
+          border-radius: 10px 10px 0px 0px; 
+          font-size: 14pt; 
+          text-align: center;
+      }
+      
+      
+
+      
+      div.bar {
+          display: none;
+      }
+      
+      @media all and (max-width: 40em) {
+      
+
+          input[type=checkbox]:checked ~ div.dropdown  {
+              display: none;
+          }
+      
+          div.publication label {
+      	float: left;
+          }
+          
+          span.rightlinks {
+      	float: left;
+      	width: 100%;
+      	padding-left: 1em;
+      	/*border-left: 1px solid #aaa;*/
+      	order: 2;
+          }
+      
+
+          
+          div.publication > p {
+      	order: 1;
+      	padding-left: 1em;
+      	/*border-left: 1px solid #aaa;*/
+          }
+      
+          div.publication > div.stuff > p:first-child {
+      	padding-left: 0;
+      	border-left: none;
+          }
+      
+          div.publication {
+      	display: flex;
+      	flex-direction: column;
+      	border-bottom: 1px solid #aaa;
+          }
+          
+          .abstract {
+      	padding-right: 1em;
+      	padding-left: 1em;
+      	margin-top: 1em;
+      	margin-bottom: 1em;
+          }
+      
+      
+
+          
+
+          
+      }
+      
+      span.footnote {
+          position: relative;
+          width: 0px;
+          margin-left: -.3em;
+      }
+      
+      span.footnote > a:first-child {
+          vertical-align: super;
+          font-size: .7em;
+          line-height: 100%;
+          margin-left: 2px;
+      }
+      
+      .footnote_content {
+          padding: .2em;
+          margin: 0px;
+          background: #ffffff;
+          opacity: 0.95;
+          left: 3em;
+          border: #aaa 1px solid;
+          display: block;
+          position: fixed;
+          left: 0px;
+          margin-left: 1em;
+          margin-right: 1em;
+          max-width: calc(100% - 2em);
+          border-radius: 2px;
+          visibility: hidden;
+          transition: 0.2s 1s;
+          box-shadow: 0px 2px 10px 2px rgba(0,0,0,.25);
+          z-index: 100;
+      }
+      
+      @media all and (max-width: 40em) {
+          .footnote_content {
+      	transition: 0s;
+          }
+      }
+      
+
+      
+      input[type=checkbox] {
+          display: none;
+      }
+      
+      input[type=checkbox]:checked ~ .abstract  {
+          display: none;
+      }
+      
+      input[type=radio] {
+          display: none;
+      }
+      
+      input[type=radio]:not(:checked) ~ .abstract  {
+          display: none;
+      }
+      
+      span.award {
+          background: #ffb;
+          border-radius: 3px;
+          font-weight: bold;
+      }
+      
+      span.subaward {
+          font-weight: bold;
+      }
+      
+      
+      span.me {
+          font-weight: bold;
+      }
+      
+
+      
+
+      .blink {
+        animation: blinker 1s step-start infinite;
+      }
+      
+      @keyframes blinker {
+         50% {
+          opacity: 0;
+        }
+      }
+      
+      @font-face {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Lora Regular'), local('Lora-Regular'), url(/lora.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
    </style>
 
 </head>
@@ -75,7 +449,7 @@
 
       <div class="row">
          <div class="col-sm-12">
-            <h1>Notes</h1>
+            
 
 
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -83,14 +457,35 @@
                 <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
                   
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <h4>
-                      <papertitle>Summary: Universal Adversarial Perturbations</papertitle>
-                    </h4>
                     
-                    <a href="">Seyed-Mohsen Moosavi-Dezfooli</a>,
-                    <a href="">Alhussein Fawzi</a>,
-                    <a href="">Omar Fawzi</a>,
-                    <a href="">Pascal Frossard</a>,
+
+                    <div class="container">
+                     <div class="outer">
+
+                         <div class="inner">
+                                               
+                           <div class="publication">
+                             <span class="rightlinks">
+                               <h7 href="#"><label for="Adv_ex_res">Summary</label></h7><br />
+                             </span>
+                             <h4>
+                              <papertitle><strong><a href="adv_examples.html">A brief commentary on adversarial examples research</a></strong></papertitle>
+                            </h4>
+                             
+                             <input checked="checked" id="Adv_ex_res" type="checkbox" />
+                             <div class="abstract">
+                               <p>
+                                 #TODO
+                               </p>
+                             </div>
+                           </div>
+
+                         </div>
+                       </div>
+                  </div>
+                        
+                    
+  
                     <br>
                     <p></p>
 
