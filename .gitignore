@@ -5,4 +5,10 @@ projects.html
 vitae.html
 research.html
 adv_examples.html
+*.gz
+*.aux
+*.out
+*.bbl
+*.blg
+*.log
 

@@ -1,0 +1,75 @@
+
+\documentclass[12pt]{article}
+
+\usepackage[
+  a4paper,
+  margin=1in,
+  headsep=10pt, % separation between header rule and text
+]{geometry}
+\usepackage{xcolor}
+\usepackage{datetime}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} 
+\lhead{\footnotesize Arjun Ashok Rao}% \lhead puts text in the top left corner. \footnotesize sets our font to a smaller size.
+\rhead{\footnotesize Research Statement - \monthyeardate\today } 
+
+\usepackage{graphicx}
+
+\newcommand{\soptitle}{Arjun Ashok Rao}
+
+\newcommand{\yourname}{firstname lastname}
+\newcommand{\youremail}{arjunrao@link.cuhk.edu.hk}
+\newcommand{\yourweb}{https://arjunashokrao.me}
+\newcommand{\citeColored}[2]{{\hypersetup{citecolor=#1}\cite{‌​#2}}}
+\newcommand{\HRule}[1][\medskipamount]{\par
+  \vspace*{\dimexpr-\parskip-\baselineskip+#1}
+  \noindent\rule{\linewidth}{0.3mm}\par
+  \vspace*{\dimexpr-\parskip-.3\baselineskip+#1}}
+
+\newcommand{\statement}[1]{\par\medskip
+  \textcolor{blue}{\textbf{#1:}}\space
+}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=True,
+    linkcolor={blue},
+    citecolor=blue,
+    filecolor=red,      
+    urlcolor=blue,
+}
+
+\begin{document}
+\thispagestyle{empty}
+\Large \textbf{Arjun Ashok Rao} \hfill \Large  \textbf{\textcolor{black}{\Large{Research Statement} }} \\ \textcolor{gray}{\textbf{\hspace*{0.25in}\normalsize{The Chinese University of Hong Kong}}}
+\HRule
+
+\small Webpage: \href{https://arjunashokrao.me}{arjunashokrao.me} \quad Email: \href{mailto:arjunrao@link.cuhk.edu.hk}{arjunrao@link.cuhk.edu.hk}
+
+\bigskip
+
+\textbf{Abstract:} My Research Interests include Computer Vision and Machine Learning. More particularly, I am interested in understanding adversarial machine learning from a \emph{robustness} perspective, and how adversarial robustness can shed light on theoretical concepts such as \emph{generalization} as well as \emph{representation learning} and \emph{transfer learning}. My long term research goal is to develop deep learning models which are robust to adversarial and poisoning attacks in the real world.  \\
+
+Adversarial Examples, which can better be visualized as imperceptible `distributional' shifts in test-datasets are a natural consequence of the dimensionality gap between inputs and linear models on which those high-dimensional inputs are trained on.
+%Adversarial examples which lie on a low-dimensional data manifold are chief contributors to generalization error \cite{43405,stutz2019disentangling}.
+They generalize across different architectures, and can be used in a `black-box' fashion to threaten real-world deep learning models. Recent work has demonstrated the almost ubiquitous prevalence of adversarial examples in different applications of deep neural networks - encompassing classification (Image and voice classification, Facial Recognition), regression (Object detection, multi-object tracking), and reinforcement learning. The most common strategy to defend against test-time attacks has been to train models on adversarial data, thus ensuring some `robustness` against standard attacks. Interestingly, robust models exhibit intriguing properties not seen in standard deep nets. My current research aims on understanding and leveraging these properties to develop deep nets that are interpretable, secure, and accurate on unseen data. 
+    \\
+
+\textbf{Robustness and Generalization:} Understanding adversarial robustness may help develop a better understanding about broad theoretical questions such as those on local minima, generalization in over-parameterized networks, or the reasoning behind flat vs sharp global optimums. For example, the consensus regarding loss landscape geometries have been that flatter minima basins lead to better generalization. This hypothesis is a potential explanation to the robustness-accuracy tradeoff in robust models \cite{tsipras2018robustness} since robust models qualitatively exhibit sharper minima with lesser basin volume. 
+%This generalization error occurs when the adversarial sample lies within the boundary of the low-dimensional data manifold \cite{zeng2019adversarial}. 
+However, the lack of generalization in robust models is not always the case. Explicit regularization like enforcing local linearity of the loss surface combats the sharp minima problem in robust models. It is also possible the good generalization in robust models can be due special cases of sharp minima generalization \cite{10.5555/3305381.3305487}.\\
+
+\textbf{Robustness and Representations:} My research also studies how robustness leads to interpretable machine learning and why robust networks contain representations that align more with the human assumptions of intermediate neural network features. For example, previous empirical studies have shown that models trained against adversarial examples exhibit more human-perceptible input-gradient visualizations, as well as a smooth interpolation between image classes. Robust representations provide a high-level embedding of the input such that similar-looking classes have intermediate representations that are semantically similar \cite{engstrom2019adversarial}. In fact, performing adversarial training on very small perturbation sets might not even lead to robustness and security, but can still lead to better representations. While the intuition that neural networks truly learn interpretable representations is often assumed to be true, it is not certain. Answering questions on why robustness leads to better representations would equal taking a large step towards demystifying these `black-boxes'. \\
+
+%\textbf{Robustness and Transferability:} The inherent gap in dimensionality between inputs and linear models on which those high-dimensional inputs are trained on is a major explanation for the existence of adversarial examples. In fact, studies claim that adversarial examples which lie on a low-dimensional data manifold are chief contributors to generalization error \cite{43405,stutz2019disentangling}. Since adversarial examples generalize across different architectures, they are transferable and can be used in a `black-box' fashion to threaten real-world deep learning models. However, robustness might also transfer through input gradients \cite{chan2020thinks}
+
+At The Chinese University of Hong Kong, my research primarily involves developing application-specific adversarial defenses. Stereo-Vision, commonly used in autonomous driving applications were shown to be vulnerable to adversarial attacks that primarily distort the \emph{disparity} perception in the rectified stereo pair. My research developed a completely cyber-physical approach to conduct adversarial training with left-right feature map regularization while ensuring local linearity of the loss surface. I also worked on more exploratory research understanding distributed deep learning and how over-parameterized neural networks can generalize in a distributed setting. Many of these approaches are the current state-of-the-art, and consistently have shown to be more robust than previous defenses.\\
+
+%My broad research goal is to develop an understanding of deep neural networks that can potentially explain the presence of these small and imperceptible adversarial examples. This understanding should also help other explain other unexplained dichotomies and findings in adversarial machine learning - like how robust training leads to better representations but worse generalization with sharper global minima in their loss landscapes. 
+\bibliographystyle{IEEEtran}
+\bibliography{ref.bib}
+\end{document}
