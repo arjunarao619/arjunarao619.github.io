@@ -21,19 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{43405}
-\BIBentryALTinterwordspacing
-I.~Goodfellow, J.~Shlens, and C.~Szegedy, ``Explaining and harnessing
-  adversarial examples,'' in \emph{International Conference on Learning
-  Representations}, 2015. [Online]. Available:
-  \url{http://arxiv.org/abs/1412.6572}
-\BIBentrySTDinterwordspacing
-
-\bibitem{stutz2019disentangling}
-D.~Stutz, M.~Hein, and B.~Schiele, ``Disentangling adversarial robustness and
-  generalization,'' in \emph{Proceedings of the IEEE Conference on Computer
-  Vision and Pattern Recognition}, 2019, pp. 6976--6987.
-
 \bibitem{tsipras2018robustness}
 \BIBentryALTinterwordspacing
 D.~Tsipras, S.~Santurkar, L.~Engstrom, A.~Turner, and A.~Madry, ``Robustness
@@ -41,12 +28,6 @@ D.~Tsipras, S.~Santurkar, L.~Engstrom, A.~Turner, and A.~Madry, ``Robustness
   Representations}, 2019. [Online]. Available:
   \url{https://openreview.net/forum?id=SyxAb30cY7}
 \BIBentrySTDinterwordspacing
-
-\bibitem{zeng2019adversarial}
-X.~Zeng, C.~Liu, Y.-S. Wang, W.~Qiu, L.~Xie, Y.-W. Tai, C.-K. Tang, and A.~L.
-  Yuille, ``Adversarial attacks beyond the image space,'' in \emph{Proceedings
-  of the IEEE Conference on Computer Vision and Pattern Recognition}, 2019, pp.
-  4302--4311.
 
 \bibitem{10.5555/3305381.3305487}
 L.~Dinh, R.~Pascanu, S.~Bengio, and Y.~Bengio, ``Sharp minima can generalize
@@ -58,5 +39,13 @@ L.~Dinh, R.~Pascanu, S.~Bengio, and Y.~Bengio, ``Sharp minima can generalize
 L.~Engstrom, A.~Ilyas, S.~Santurkar, D.~Tsipras, B.~Tran, and A.~Madry,
   ``Adversarial robustness as a prior for learned representations,''
   \emph{arXiv preprint arXiv:1906.00945}, 2019.
+
+\bibitem{me}
+\BIBentryALTinterwordspacing
+Q.~Sun, A.~Rao, X.~Yao, B.~Yu, and S.~Hu, ``Counteracting adversarial attacks
+  in autonomous driving,'' in \emph{IEEE/ACM International Conference on
+  Computer-Aided Design (ICCAD)}, 2020. [Online]. Available:
+  \url{http://www.cse.cuhk.edu.hk/~byu/papers/C105-ICCAD2020-Stereo.pdf}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
