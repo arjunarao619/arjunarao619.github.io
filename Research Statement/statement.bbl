@@ -41,14 +41,6 @@ M.~Andriushchenko and N.~Flammarion, ``Understanding and improving fast
   Available: \url{http://infoscience.epfl.ch/record/278914}
 \BIBentrySTDinterwordspacing
 
-\bibitem{me}
-\BIBentryALTinterwordspacing
-Q.~Sun, A.~Rao, X.~Yao, B.~Yu, and S.~Hu, ``Counteracting adversarial attacks
-  in autonomous driving,'' in \emph{IEEE/ACM International Conference on
-  Computer-Aided Design (ICCAD)}, 2020. [Online]. Available:
-  \url{http://www.cse.cuhk.edu.hk/~byu/papers/C105-ICCAD2020-Stereo.pdf}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Croce:278915}
 \BIBentryALTinterwordspacing
 F.~Croce, M.~Andriushchenko, N.~Singh, N.~Flammarion, and M.~Hein, ``Sparse-rs:
