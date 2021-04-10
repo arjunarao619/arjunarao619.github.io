@@ -27,7 +27,7 @@ body {
   color: #656565;
 }
 .montserrat2 {
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: "Montserrat", Helvetica, sans-serif !important;
   font-size: 2rem;
 }
 
@@ -53,6 +53,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", Helvetica, sans-serif;
   color: #20364c;
   font-weight: 500;
+}
+
+ha{
+  font-size: 42px;
+  margin: 0;
+  padding-bottom: 16px;
+  line-height: 42px;
+  letter-spacing: -1px;
 }
 
 h7 {
