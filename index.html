@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93760431-3"></script>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93760431-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,6 +10,23 @@
   gtag('config', 'UA-93760431-3');
 </script>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+  <style type="text/css">
+    .inverted .math {
+      color: white;
+      background-color: black;
+    }
+  </style> 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+</script>
+<style>
+    .MathJax * {
+        background: #424242;
+        color: #fff;
+    }
+ </style>
+
   <!-- Metadata for the Webpage -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +34,6 @@
   <title>Arjun Ashok Rao</title>
   <meta content="Arjun Rao is an Undergraduate student at The Chinese University of Hong Kong working. His research interests include robust optimization in machine learning, and computer vision." name="description" />
 
-  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
@@ -39,238 +52,298 @@
   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Bootstrap CSS files-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
-  <!-- jQuery UI CSS (optional) -->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-
-  <!-- Google web fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600" rel="stylesheet">
-
-  <!-- Font Awesome Web Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-  <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
   <!-- Local styles -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/main.css">
 
-</head>
+  </head>
 
-<body>
 
-  <!-- navbar include -->
-  <div w3-include-html="navbar.html"></div>
 
-  <div class="spacer-div-3 hidden-xs hidden-xs"></div>
+  <body>
+      <div id="content">
+            <header>
+                <h1>Arjun Rao</h1>
+            </header>
+            <article id="about-container">
+                <div id="photo">
+                    <img src="img/arjun_home.JPG" alt="Arjun Rao">
+                    
+                    <p></p>
 
-  <!-- Main content    -->
-  <div id="main-container" class="container">
 
-    <div class="row">
-      <div class="col-sm-4">
-        <img class="center-block img img-responsive myface" src="img/headshot4_circle.jpg" alt="Arjun Rao">
+                </div>
+                <div id="about">
+                    <p>
+                        I am a final-year undergraduate student at <a href="http://cuhk.edu.hk/english/index.html" target="_blank">The Chinese University of Hong Kong</a> majoring in Financial Technology and Data Analytics.
+                    </p>
+                    
+                    <p>
+                        My reseach interests broadly encompass optimization for machine learning. I am most interested in adversarial robustness in deep learning with a focus on how natural or adversarial data shifts can affect generalization and loss landscapes. 
+                        I currently work on decentralized optimization theory under the supervision of <a href="http://www.se.cuhk.edu.hk/~htwai/" target="_blank">Prof. Hoi-To Wai</a>.
+                    </p>
+                <div id = "contact">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="ArjunRaoCV.pdf" target="_blank">My CV (05/21)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://scholar.google.com/citations?user=Tl-uRp0AAAAJ&hl=en" target="_blank">Google Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class = "email1">
+                    ArjunRao[at]link.cuhk.edu.hk
+                </div>
+                </div>
+                 
+                </div>
 
-        <p id="title">Arjun Ashok Rao<br>
-          <span id="program">The Chinese University of Hong Kong</span>
-        </p>
+            </article>
+            
 
-        <table class="table" id="contact-table">
-          <tbody>
-            <tr>
-              <td style="width:30px"><i class="fas fa-home"></i></td>
-              <td>
-                The Chinese University of Hong Kong<br>
+            <div id = 'contact'></div>
+
+
+            <div class="items">
+                <style>
+                    .tooltip {
+                      position: relative;
+                      display: inline-block;
+                      border-bottom: 1px dotted black;
+                    }
+                    
+                    .tooltip .tooltiptext {
+                      visibility: hidden;
+                      width: 350px;
+                      background-color: #424242;
+                      color: #fff;
+                      text-align: justify;
+                      border-radius: 6px;
+                      padding: 15px 15px;
+                      border-width: 5px;
+
+                    
+                      /* Position the tooltip */
+                      position: absolute;
+                      z-index: 1;
+                    }
+                    
+                    .tooltip:hover .tooltiptext {
+                      visibility: visible;
+                    }
+
+                    .darkit {
+                        background-color: #424242;
+                        color: #fff;
+                    }
+                    .udark {
+                        background-color: #424242;
+                        color: #fff;
+                        text-decoration-line: underline;
+                        
+                    }
+                    .urlnew {
+                        color: white;
+                        background-color: transparent;
+                        text-decoration-line: underline;
+                        text-decoration-color:deepskyblue;
+                    }
+                    </style>
+     
+                <h2>Research Experience</h2>             
+                <table>
+                <tr>
+                    <td class="exp">
+                        <strong>NASA Jet Propulsion Laboratory</strong><br>
+                        <a href="https://ml.jpl.nasa.gov target="_blank"">Machine Learning & Instrument Autonomy Group</a><br>
+                        Advisors: <a href="https://scholar.google.com/citations?user=RO6PeBgAAAAJ&hl=en" target="_blank">Dr. Andrew Thorpe</a> and <a href="https://ml.jpl.nasa.gov/people/mauceri/mauceri.html" target="_blank">Dr. Steffen Mauceri</a><br>
+                        Summer Research Intern: Caltech <a href="https://sfp.caltech.edu/programs/surfjpl" target="_blank">SURF@JPL</a> <br>
+                    </td>
+                    <td class="date">Jun 2021 &ndash; Aug 2021</td>
+                </tr>
                 
-                N.T, Hong Kong SAR
-              </td>
-            </tr>
+                <tr>
+                    <td class="exp">
+                        <strong>The Chinese University of Hong Kong</strong><br>
+                        <a href="https://www.se.cuhk.edu.hk/" target="_blank">Department of Systems Engineering</a><br>
+                        Advisor: <a href="https://www1.se.cuhk.edu.hk/~htwai/" target="_blank">Prof. Hoi-To Wai</a><br>
+                        Winter + Fall Research Intern | Topic: <span class="tooltip">Decentralized Optimization <span class="tooltiptext">In decentralized <i class = 'darkit'>consensus</i> optimization, 
+                            data is partitioned <i class='darkit'>privately</i> among \(\mathbb{N}\) workers, and the goal is to minimize each worker's objective function 
+                            \(f_{i}(\theta)\) while ensuring that \(\mathbb{N}\) workers agree about the underlying distribution of \(\theta\). 
+                            <u class='udark'>The catch:</u> \(\mathbb{N}\) workers are distributed over a sparse graph topology, and can only communicate with immidiate neighbours. 
+                            Applications include <a href='https://dl.acm.org/doi/10.1561/2200000051' class = "urlnew" target="_blank">sensor networks</a> and <a class="urlnew" href="https://arxiv.org/abs/1907.09356" target="_blank">privacy preserving machine learning</a>.</span></span>
+                    </td>
+                    <td class="date">Nov 2020 &ndash; May 2021</td>
+                </tr>
+
+                <tr>
+                    <td class="exp">
+                        <strong>The Chinese University of Hong Kong</strong><br>
+                        <a href="https://www.cse.cuhk.edu.hk/" target="_blank">Department of Computer Science and Engineering</a><br>
+                        Advisor: <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Prof. Bei Yu</a><br>
+                        Summer Research Intern | Topic: <span class="tooltip">Adversarial Robustness<span class="tooltiptext">Adversarial Examples, which can better be visualized as imperceptible ‘distribution’ shifts in data are a natural consequence 
+                            of the dimensionality gap between inputs and linear models on which
+                            high-dimensional inputs are trained on. They generalize across different architectures, and can be used
+                            in a ‘black-box’ fashion to threaten real-world deep learning models.  The most common strategy to defend against
+                            test-time attacks has been to train models on adversarial data, thus ensuring some ‘robustness‘ against
+                            standard attacks. </span></span>
+                        
+                    </td>
+                    <td class="date">May 2020 &ndash; Sep 2021</td>
+                </tr>
+
+                </table>
+            </div>
 
 
-            <tr>
-              <td><i class="fas fa-at"></i></td>
-              <td><a href="mailto:arjunrao@link.cuhk.edu.hk"></a>arjunrao@link.cuhk.edu.hk</a></td>
-            </tr>
-
-            <!-- <tr>
-              <td style="width:30px"><i class="fab fa-github"></i></td>
-              <td><a href="https://github.com/arjunarao619">arjunarao619</a></td>
-            </tr> -->
-
-          </tbody>
-        </table>
-
-      </div>
-      <div class="col-sm-8 pad" >
-        <h1>Arjun Rao</h1>
-        <p style="font-size:100%; ">I am a third-year undergraduate student at The Chinese University of Hong Kong majoring in Financial Technology and Data Analytics. </p>
-
-          <p style="font-size:100%; ">I am interested in adversarial robustness in deep learning with a focus on how natural or adversarial data shifts can affect generalization and loss landscapes. I am also interested in studying how robustness can create better representations in neural networks. </p>
-          <p style="font-size:100%; "> I am currently working on distributed/decentralized optimization theory under the supervision of <a href="http://www.se.cuhk.edu.hk/~htwai/">Prof. Hoi-To Wai</a>. </p>
 
 
-            <div class="col-sm-8">
+            <div class="items" style="margin-bottom: 32px;">
+                    <h2>Publications</h2>
+                    <style>
+                        .abstract {
+                            padding-right: 5.5em; 
+                            padding-left: 5.5em; 
+                            text-align: center;
+                            margin-top: 1em;
+                            transition: .3s ease-in-out;
+                            max-height: 30em;
+                            overflow: hidden;
+                        }
+                        
+                        span.rightlinks {
+                        }
+                        div.menuwrap {
+                            
+                        }
 
-              <!-- Social professional networking icons -->
-              <ul class="social-icons pull-right">
-                <!-- <li><a href="" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li> -->
-                <li><a href="https://twitter.com/arjun_arao" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-                
-                <!-- <li><a href="" target="_blank"><i class="ai ai-academia-square ai-2x"></i></a></li> -->
-                <li><a href="https://www.linkedin.com/in/arjunarao/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                <li><a href="https://github.com/arjunarao619" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-                <li><a href="https://scholar.google.com/citations?user=Tl-uRp0AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a></li>
-                <br><br>
-                <li>               
-                  
-                  
-              
-              </li>
-              <a id="link-to-docs" role="button" class="btn btn-default pull-center" href="ArjunRaoCV.pdf" target="_blank">
-                <i class="far fa-file-pdf fa-fw " aria-hidden="true"></i>&nbsp; My CV
-                </a>
-                
+                        @media all and (max-width: 40em) {     
+                            div.bars {
+                                cursor: pointer;
+                                float: right;
+                            }
+                            
+                            div.bar {
+                                display: block;
+                                width: 28px;
+                                height: 3px;
+                                background-color: #000;
+                            }
+                            
+                            div.bar ~ div.bar {
+                                margin: 5px 0;
+                            }
+                        
 
-              </ul>
+                            span.rightlinks {
+                            float: right;
+                            width: 100%;
+                            padding-left: 1em;
+                            /*border-left: 1px solid #aaa;*/
+                            order: 1;
+                            }
+                        
+                            span.rightlinks > *:not(:first-child) {
+                                display: none;
+                            }
+                            
+                        }                      
+                        
+                        .footnote:hover .footnote_content  {
+                            visibility: visible;
+                            transition-delay: 0s;
+                        }
+                        
+                        input[type=checkbox] {
+                            display: none;
+                        }
+                        
+                        input[type=checkbox]:checked ~ .abstract  {
+                            margin-top: 0em;
+                            max-height: 0em;
+                            overflow: hidden;
+                            transition: .3s ease-in-out;
+                        }
+                        
+                        @font-face {
+                          font-family: 'Lora';
+                          font-style: normal;
+                          font-weight: 400;
+                          font-display: optional;
+                          src: local('Lora Regular'), local('Lora-Regular'), url(/lora.woff2) format('woff2');
+                          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                        }
+                        </style>
 
-      
+                        <style>
+                            .pubclick {
+                            /* border: 2px solid #777; */
+                            border-left: 0px;
+                            border-bottom: 0px;
+                            height: .6em;
+                            width: .6em;
+                            color: #B71C1C;
+                            
+                            }
+                            
+                            input[type=checkbox]:not(:checked) ~ span.rightlinks div.pubclick  {
+                            /* transform: rotate(135deg); */
+                            }                        
+                            a:hover .pubclick {
+                            /* transform: rotate(45deg); */
+                            }                            
+                        </style>
+
+                    <table>                        
+                        <tr>
+                        <td class="exp1">     
+                              <a href="http://qisunchn.top/">Qi Sun</a>,
+                              <strong>Arjun Ashok Rao</strong>,
+                              <a href="">Xufeng Yao</a>,
+                              <a href="http://www.cse.cuhk.edu.hk/~byu/index.html">Bei Yu</a>,
+                              <a href="http://www.ece.mtu.edu/faculty/shiyan/">Shiyan Hu</a>,
+                              <strong>“Counteracting Adversarial Attacks in Autonomous Driving”</strong>, IEEE/ACM International Conference on Computer-Aided Design (ICCAD), Nov. 2–5, 2020. 
+                              &nbsp;&nbsp;<a href="http://www.cse.cuhk.edu.hk/~byu/papers/C105-ICCAD2020-Stereo.pdf">[Paper]</a>&nbsp;<a href="http://www.cse.cuhk.edu.hk/~byu/papers/C105-ICCAD2020-Stereo-slides.pdf">[Slides]</a>
+                              <input checked="checked" id="robust_iccad" type="checkbox" />
+                              <span class="rightlinks">
+                                <a href="#"><label for="robust_iccad">
+                                     <span class="pubclick">[Abstract+]</span>
+                                    </div>
+                                    
+                                </label></a>
+                                
+                              </span>
+                              <div class="abstract">
+                                
+                                    <p class='justify'>Autonomous system operation requires real-time processing of measurement data which often contain significant
+                                    uncertainties and noise. Adversarial attacks have been widely studied to simulate these perturbations in recent years. To counteract 
+                                    these attacks in autonomous systems, a novel defense method is proposed in this paper. </p>
+                                    
+                                    <p class='justify'>A stereo-regularizer is proposed to guide the
+                                    model to learn the implicit relationship between the left and right
+                                    images of the stereo-vision system. Univariate and multivariate
+                                    functions are adopted to characterize the relationships between the
+                                    two input images and the object detection model. The regularizer is
+                                    then relaxed to its upper bound to improve adversarial robustness.
+                                    Furthermore, the upper bound is approximated by the remainder
+                                    of its Taylor expansion to improve the <i>local smoothness</i> of the loss
+                                    surface. The model parameters are trained via adversarial training with the novel regularization term. </p>
+                                    
+                                    <p class='justify'>Our method exploits basic
+                                    knowledge from the physical world, i.e., the mutual constraints of
+                                    the two images in the stereo-based system. As such, outliers can be
+                                    detected and defended with high accuracy and efficiency. Numerical
+                                    experiments demonstrate that the proposed method offers superior
+                                    performance when compared with traditional adversarial training
+                                    methods in state-of-the-art stereo-based 3D object detection models
+                                    for autonomous vehicles.</p>
+                                </p>
+                                
+                              </div>
+                              
+                        </td>
+                        
+                        </tr>
+                        
+                    </table>
             </div>
 
       </div>
-      
-               <!-- <a id="link-to-docs" role="button" class="btn btn-default" href="#" target="_blank">
-                  <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; My CV
-               </a> -->
-
-    </div>
-
-    <h3 class="push-down-1"><span>Recent News</span></h3>
-
-    <ul id="education">
-      <li>
-        <span class="university"><strong>September 2020: </strong></span>
-        I have written a brief review of conventional stereo matching algorithms for anybody looking for a quick summary into this exciting problem. <a href="Stereo_Vision_Review.pdf" target="_blank">(PDF)</a>        
-      </li>
-
-      <li>
-        <span class="university"><strong>July 2020: </strong></span>
-        I've been accepted as a <a href="https://studentambassadors.microsoft.com/">Microsoft Learn Student Ambassador</a> (Formerly known as Microsoft Student Partner)        
-      </li>
-      <li>
-        <span class="university"><strong>May 2020: </strong></span>
-        Our Reinforcement-Learning based financial planning mobile application "Flux" has been accepted to the <a href="http://cupp.cyberport.hk/">Cyberport University Partnership Program</a> - a fully-funded incubation program.   
-      </li>
-      <li>
-        <span class="university"><strong>May 2020: </strong></span>
-        I have begun an undergraduate research internship at The Chinese University of Hong Kong under the supervision of <a href="http://www.cse.cuhk.edu.hk/~byu/">Professor Bei Yu.</a>   
-      </li>
-
-
-    </ul>
-
-
-    <h3 class="push-down-2"><span>Conference Papers</span></h3>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nlt_image'></div>
-                <img src='img/iccad20.png' width="250" >
-              </div>
-              <script type="text/javascript">
-                function nlt_start() {
-                  document.getElementById('nlt_image').style.opacity = "1";
-                }
-
-                function nlt_stop() {
-                  document.getElementById('nlt_image').style.opacity = "0";
-                }
-                nlt_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <h4>
-                <papertitle>Counteracting Adversarial Attacks in Autonomous Driving</papertitle>
-              </h4>
-              <p>IEEE/ACM International Conference on Computer-Aided Design (<strong>ICCAD</strong>), 2020. (Invited Paper)</p>
-              <p></p>
-              
-
-              
-              <a href="http://qisunchn.top/">Qi Sun</a>,
-              <strong>Arjun Ashok Rao</strong>,
-              <a href="">Xufeng Yao</a>,
-              <a href="http://www.cse.cuhk.edu.hk/~byu/index.html">Bei Yu</a>,
-              <a href="http://www.ece.mtu.edu/faculty/shiyan/">Shiyan Hu</a>,
-              <br>
-              <br>
-              <a id="link-to-docs" role="button" class="btn btn-default pull-center" href="http://www.cse.cuhk.edu.hk/~byu/papers/C105-ICCAD2020-Stereo.pdf" target="_blank">
-                <i class="far fa-file-pdf fa-fw " aria-hidden="true"></i>&nbsp; Paper
-              </a>
-              <a id="link-to-docs" role="button" class="btn btn-default pull-center" href="http://www.cse.cuhk.edu.hk/~byu/papers/C105-ICCAD2020-Stereo-slides.pdf" target="_blank">
-                <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp;  Slides
-              </a>
-              
-
-              
-                                
-
-                <!-- <em>Under Review</em>  -->
-             
-
-              <!-- <a href="http://nlt.csail.mit.edu/">project page</a> /
-              <a href="https://arxiv.org/abs/2008.03806">arXiv</a> /
-              <a href="https://www.youtube.com/watch?v=-DueDZxIEYg">video</a> -->
-              <p></p>
-              <!-- <p>We find that regularizing the left-right stereo pair and enforcing local linearity of the stereo-loss surface helps deliver robustness to disparity-dependant stereo object detection models in autonomous driving</p> -->
-              <!-- <a id="link-to-docs" role="button" class="btn btn-default" href="#" target="_blank">
-                <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Paper
-             </a> -->
-            </td>
-            
-          </tr> 
-        </table>
-
-    
-
-
-  </div>
-
-  
-
-  <!-- Back-to-top button -->
-  <!-- <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a> -->
-
-
-  <!-- footer include -->
-  <div w3-include-html="footer.html"></div>
-
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- Bootstrap JS Library -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
-  <!-- html file include script | used for navbar and footer -->
-  <script src="js/w3data.js"></script>
-  <script>
-    w3IncludeHTML()
-  </script>
-
-  <!-- Local scripts -->
-  <script src="js/main.js"></script>
-
-  <script>
-    $(document).ready(function() {
-      $("li#about a").addClass("active");
-      $("li#about a").addClass("hvr-bubble-bottom");
-    });
-  </script>
-
-</body>
-
+  </body>
 </html>
