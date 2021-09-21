@@ -161,6 +161,11 @@ a { color:#B71C1C; }
     border: lightgray;
     
 }
+.caption{
+
+        font: italic small-caps bold 12px/30px Georgia, serif;
+    
+}
 .hov:hover {
     
 }
