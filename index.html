@@ -38,7 +38,7 @@
 
   <!-- Local styles -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="css/main.css?v=2">
+  <link rel="stylesheet" href="css/main.css">
 
   </head>
 
@@ -50,8 +50,9 @@
                 <h1>Arjun Rao</h1>
             </header>
             <article id="about-container">
-                <div id="photo">
+                <div id="photo" class="photo-tooltip">
                     <img src="img/arjun-2025.jpg" alt="Arjun Rao">
+                    <span class="photo-tooltiptext">At Glacier National Park, thanks to my friend <a href="https://www.linkedin.com/in/sriranga-kr?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADISUP4B8wS-A5O2xU4PjFxP2AdWEMFxT4w&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people%3BKcE2QAdHQOSpG1g9raSS1A%3D%3D" target="_blank" style="color: #a0c4ff; text-decoration: underline;">Sriranga Ramaswamy</a></span>
                 </div>
                 <div id="about">
                     <p>
@@ -147,11 +148,9 @@
 
 
 
-            <div class="items" style="margin-bottom: 32px;">
+            <div class="items publications-section" style="margin-bottom: 32px;">
                     <h2>Publications</h2>
-
                     <table>
-                        <!-- 2025 Intrinsic Dimension - Under Review @ ICLR 2026 -->
                         <tr>
                             <td class="exp1">
                                 <strong>Arjun Ashok Rao</strong>,
@@ -165,16 +164,12 @@
                                 <span class="rightlinks">
                                     <a href="#"><label for="intrinsic_dimension">
                                          <span class="pubclick">[Abstract+]</span>
-                                        </div>
-                                        
                                     </label></a>
-                                    
                                 </span>
                                 <div class="abstract">
 
                                     <p class='justify'>Within the context of representation learning for Earth observation, geographic Implicit Neural Representations (INRs) embed low-dimensional location inputs (longitude, latitude) into high-dimensional embeddings, through models trained on geo-referenced satellite, image or text data. Despite the common aim of geographic INRs to distill Earth's data into compact, learning-friendly representations, we lack an understanding of how much information is contained in these Earth representations, and where that information is concentrated. The intrinsic dimension of a dataset measures the number of degrees of freedom required to capture its local variability, regardless of the ambient high-dimensional space in which it is embedded. This work provides the first study of the intrinsic dimensionality of geographic INRs. Analyzing INRs with ambient dimension between 256 and 512, we find that their intrinsic dimensions fall roughly between 2 and 10 and are sensitive to changing spatial resolution and input modalities during INR pre-training. Furthermore, we show that the intrinsic dimension of a geographic INR correlates with downstream task performance and can capture spatial artifacts, facilitating model evaluation and diagnostics. More broadly, our work offers an architecture-agnostic, label-free metric of information content that can enable unsupervised evaluation, model selection, and pre-training design across INRs.</p>
-                                                                        
-                                    
+                                    </p>
                                 </div>
                             </td>
                         </tr>
@@ -198,17 +193,10 @@
                                 <span class="rightlinks">
                                     <a href="#"><label for="multimodal_terabytes">
                                          <span class="pubclick">[Abstract+]</span>
-                                        </div>
-                                        
                                     </label></a>
-                                    
                                 </span>
                                 <div class="abstract">
-
                                     <p class='justify'>A large variety of geospatial data layers is available around the world ranging from remotely-sensed raster data like satellite imagery, digital elevation models, predicted land cover maps, and human-annotated data, to data derived from environmental sensors such as air temperature or wind speed data. A large majority of machine learning models trained on satellite imagery (SatML), however, are designed primarily for optical input modalities such as multi-spectral satellite imagery. To better understand the value of using other input modalities alongside optical imagery in supervised learning settings, we generate augmented versions of SatML benchmark tasks by appending additional geographic data layers to datasets spanning classification, regression, and segmentation. Using these augmented datasets, we find that fusing additional geographic inputs with optical imagery can significantly improve SatML model performance. Benefits are largest in settings where labeled data are limited and in geographic out-of-sample settings, suggesting that multi-modal inputs may be especially valuable for data-efficiency and out-of-sample performance of SatML models. Surprisingly, we find that hard-coded fusion strategies outperform learned variants, with interesting implications for future work.</p>
-                                                                        
-                                    
-                                    
                                 </div>
                             </td>
                         </tr>
@@ -230,17 +218,10 @@
                                   <span class="rightlinks">
                                     <a href="#"><label for="les_JPL">
                                          <span class="pubclick">[Abstract+]</span>
-                                        </div>
-                                        
                                     </label></a>
-                                    
                                   </span>
                                   <div class="abstract">
-
                                     <p class='justify'> Methane is a highly potent greenhouse gas, and accurately measuring methane emissions is an important step in addressing global environmental change. A large number of human-caused methane emissions originate from small ground structures known as "point-source emitters". These structures typically span a few meters wide and release highly concentrated methane. Current work on detecting these emissions use machine learning models that are trained to identify point-source emissions from aerial imagery. However, these models require large amounts of expensive labelled data, and have shown an inability to adapt to new terrain and environments. To increase the amount of methane emission data available to scientists, we use a collection of synthetic methane measurements. This data is generated with a mathematical model built to realistically replicate the three-dimensional distribution of methane observed in aerial imagery. We train a Convolutional Neural Network on the generated synthetic data, and test our model on realistic datasets containing airborne imagery from diverse terrain and environmental conditions. Training models on a combination of synthetic and real methane data helps reduce false positives on previously unseen scenes. </p>
-                                                                        
-                                    </p>
-                                    
                                   </div>
                                   
                             </td>
@@ -264,18 +245,11 @@
                                   <span class="rightlinks">
                                     <a href="#"><label for="orb_JPL">
                                          <span class="pubclick">[Abstract+]</span>
-                                        </div>
-                                        
                                     </label></a>
-                                    
                                   </span>
                                   <div class="abstract">
-
                                     <p class='justify'> Despite methane's important role as a greenhouse gas, the contribution of individual sources to rising methane concentrations in Earth's atmosphere is poorly understood. This is in part due to the lack of frequent measurements on a global scale, required to accurately quantify fugitive methane sources. Future missions such as Earth Surface Mineral Dust Source Investigation (EMIT), Surface Biology and Geology (SBG), and Carbon Mapper promise to provide global, spatially resolved spectroscopy observations that will allow us to map methane sources. However, the detection and attribution of individual methane sources is challenged by retrieval artifacts and noise in retrieved methane concentrations. Additionally, manual methane plume detection is not scalable to global space-borne observations due to the sheer volume of data generated. A robust automated system to detect methane plumes is needed.
                                         We evaluated the performance and sensitivity of several methane plume detection methods on 30m to 60m hyperspectral imagery, downsampled from airborne campaigns with AVIRIS-NG. To aid the training of the plume detection models, we explored supplementing downsampled airborne imagery with Large Eddy Simulations (LES) of methane plumes. We compared baseline methods such as thresholding and random forest classifiers, as well as state-of-the-art deep learning methods such as convolutional neural networks (CNNs) for classification and conditional adversarial networks (pix2pix) for plume segmentation. </p>
-                                                                        
-                                    </p>
-                                    
                                   </div>
                                   
                             </td>
@@ -293,17 +267,10 @@
                                   <span class="rightlinks">
                                     <a href="#"><label for="decensgd_apsipa">
                                          <span class="pubclick">[Abstract+]</span>
-                                        </div>
-                                        
                                     </label></a>
-                                    
                                   </span>
                                   <div class="abstract">
-
                                     <p class='justify'> This paper considers decentralized optimization with application to machine learning on graphs. The growing size of neural network (NN) models has led prior work surrounding decentralized stochastic gradient algorithms which support communication compression. On the other hand, recent works have demonstrated the favorable convergence and generalization properties of overparameterized NNs. In this work, we present an empirical analysis on the performance of compressed decentralized stochastic gradient (DSG) algorithms with overparameterized NNs. Through simulations on an MPI network environment, we observe that the convergence rates of popular compressed DSG algorithms are robust to the size of NNs. Our findings suggest a gap between theories and practice of the compressed DSG algorithms in the existing literature. </p>
-                                                                        
-                                    </p>
-                                    
                                   </div>
                                   
                             </td>
@@ -324,37 +291,31 @@
                               <span class="rightlinks">
                                 <a href="#"><label for="robust_iccad">
                                      <span class="pubclick">[Abstract+]</span>
-                                    </div>
-                                    
                                 </label></a>
-                                
                               </span>
                               <div class="abstract">
+                                <p class='justify'>Autonomous system operation requires real-time processing of measurement data which often contain significant
+                                uncertainties and noise. Adversarial attacks have been widely studied to simulate these perturbations in recent years. To counteract 
+                                these attacks in autonomous systems, a novel defense method is proposed in this paper. </p>
                                 
-                                    <p class='justify'>Autonomous system operation requires real-time processing of measurement data which often contain significant
-                                    uncertainties and noise. Adversarial attacks have been widely studied to simulate these perturbations in recent years. To counteract 
-                                    these attacks in autonomous systems, a novel defense method is proposed in this paper. </p>
-                                    
-                                    <p class='justify'>A stereo-regularizer is proposed to guide the
-                                    model to learn the implicit relationship between the left and right
-                                    images of the stereo-vision system. Univariate and multivariate
-                                    functions are adopted to characterize the relationships between the
-                                    two input images and the object detection model. The regularizer is
-                                    then relaxed to its upper bound to improve adversarial robustness.
-                                    Furthermore, the upper bound is approximated by the remainder
-                                    of its Taylor expansion to improve the <i>local smoothness</i> of the loss
-                                    surface. The model parameters are trained via adversarial training with the novel regularization term. </p>
-                                    
-                                    <p class='justify'>Our method exploits basic
-                                    knowledge from the physical world, i.e., the mutual constraints of
-                                    the two images in the stereo-based system. As such, outliers can be
-                                    detected and defended with high accuracy and efficiency. Numerical
-                                    experiments demonstrate that the proposed method offers superior
-                                    performance when compared with traditional adversarial training
-                                    methods in state-of-the-art stereo-based 3D object detection models
-                                    for autonomous vehicles.</p>
-                                </p>
+                                <p class='justify'>A stereo-regularizer is proposed to guide the
+                                model to learn the implicit relationship between the left and right
+                                images of the stereo-vision system. Univariate and multivariate
+                                functions are adopted to characterize the relationships between the
+                                two input images and the object detection model. The regularizer is
+                                then relaxed to its upper bound to improve adversarial robustness.
+                                Furthermore, the upper bound is approximated by the remainder
+                                of its Taylor expansion to improve the <i>local smoothness</i> of the loss
+                                surface. The model parameters are trained via adversarial training with the novel regularization term. </p>
                                 
+                                <p class='justify'>Our method exploits basic
+                                knowledge from the physical world, i.e., the mutual constraints of
+                                the two images in the stereo-based system. As such, outliers can be
+                                detected and defended with high accuracy and efficiency. Numerical
+                                experiments demonstrate that the proposed method offers superior
+                                performance when compared with traditional adversarial training
+                                methods in state-of-the-art stereo-based 3D object detection models
+                                for autonomous vehicles.</p>
                               </div>
                               
                         </td>
@@ -372,5 +333,45 @@
             </div>
 
       </div>
+
+      <script>
+        (function() {
+          const photoTooltip = document.querySelector('.photo-tooltip');
+          const tooltipText = document.querySelector('.photo-tooltiptext');
+          let hoverTimeout;
+          let isHovering = false;
+
+          if (photoTooltip && tooltipText) {
+            photoTooltip.addEventListener('mouseenter', function(e) {
+              isHovering = true;
+              hoverTimeout = setTimeout(function() {
+                if (isHovering) {
+                  updateTooltipPosition(e);
+                  tooltipText.classList.add('show');
+                }
+              }, 1500); // 1.5 second delay
+            });
+
+            photoTooltip.addEventListener('mousemove', function(e) {
+              if (tooltipText.classList.contains('show')) {
+                updateTooltipPosition(e);
+              }
+            });
+
+            photoTooltip.addEventListener('mouseleave', function() {
+              isHovering = false;
+              clearTimeout(hoverTimeout);
+              tooltipText.classList.remove('show');
+            });
+
+            function updateTooltipPosition(e) {
+              const x = e.clientX;
+              const y = e.clientY;
+              tooltipText.style.left = x + 'px';
+              tooltipText.style.top = y + 'px';
+            }
+          }
+        })();
+      </script>
   </body>
 </html>
