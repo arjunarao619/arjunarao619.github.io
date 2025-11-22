@@ -101,6 +101,7 @@ h2 {
     /* float: right;  <-- DELETED */
     /* width: 485px;  <-- DELETED */
     margin-top: -5px;
+    max-width: 600px;
 }
 #about-container {
     margin-top: 15px;
