@@ -46,6 +46,10 @@
 
   <body>
       <div id="content">
+            <!-- What I have been reading link -->
+            <div class="reading-section">
+                <a href="#" id="recent-reads-link" class="recent-reads-link">What I have been reading →</a>
+            </div>
             <header>
                 <h1>Arjun Rao</h1>
             </header>
@@ -150,10 +154,10 @@
 
             <div class="items publications-section" style="margin-bottom: 32px;">
                     <h2>Publications</h2>
-                    <table>
+                    <table>                        
                         <tr>
-                            <td class="exp1">
-                                <strong>Arjun Ashok Rao</strong>,
+                        <td class="exp1">     
+                              <strong>Arjun Ashok Rao</strong>,
                                 <a href="https://marcrusswurm.com/">Marc Rußwurm</a>,
                                 <a href="https://konstantinklemmer.github.io/">Konstantin Klemmer</a>,
                                 <a href="https://www.estherrolf.com/">Esther Rolf</a>,
@@ -161,24 +165,24 @@
                                 <br>
                                 <a href="https://arxiv.org/abs/2511.02101">[Paper]</a>
                                 <input checked="checked" id="intrinsic_dimension" type="checkbox" />
-                                <span class="rightlinks">
+                              <span class="rightlinks">
                                     <a href="#"><label for="intrinsic_dimension">
-                                         <span class="pubclick">[Abstract+]</span>
-                                    </label></a>
-                                </span>
-                                <div class="abstract">
-
+                                     <span class="pubclick">[Abstract+]</span>
+                                </label></a>
+                              </span>
+                              <div class="abstract">
+                                
                                     <p class='justify'>Within the context of representation learning for Earth observation, geographic Implicit Neural Representations (INRs) embed low-dimensional location inputs (longitude, latitude) into high-dimensional embeddings, through models trained on geo-referenced satellite, image or text data. Despite the common aim of geographic INRs to distill Earth's data into compact, learning-friendly representations, we lack an understanding of how much information is contained in these Earth representations, and where that information is concentrated. The intrinsic dimension of a dataset measures the number of degrees of freedom required to capture its local variability, regardless of the ambient high-dimensional space in which it is embedded. This work provides the first study of the intrinsic dimensionality of geographic INRs. Analyzing INRs with ambient dimension between 256 and 512, we find that their intrinsic dimensions fall roughly between 2 and 10 and are sensitive to changing spatial resolution and input modalities during INR pre-training. Furthermore, we show that the intrinsic dimension of a geographic INR correlates with downstream task performance and can capture spatial artifacts, facilitating model evaluation and diagnostics. More broadly, our work offers an architecture-agnostic, label-free metric of information content that can enable unsupervised evaluation, model selection, and pre-training design across INRs.</p>
                                     </p>
-                                </div>
-                            </td>
+                              </div>
+                        </td>
                         </tr>
                         <br>
 
                         <!-- 2025 TerraBytes @ ICML -->
                         <tr>
-                            <td class="exp1">
-                                <strong>Arjun Ashok Rao</strong>,
+                            <td class="exp1">     
+                                  <strong>Arjun Ashok Rao</strong>,
                                 <a href="https://www.estherrolf.com/">Esther Rolf</a>,
                                 <strong>"Using Multiple Input Modalities Can Improve Data-Efficiency and OOD Generalization for ML with Satellite Imagery"</strong>, TerraBytes Workshop @ ICML 2025, Proceedings of Machine Learning Research (PMLR).
                                 <span class="pub-badge spotlight">Spotlight</span>
@@ -190,14 +194,14 @@
                                 <br>
                                 <a href="https://arxiv.org/abs/2507.13385">[Paper]</a>
                                 <input checked="checked" id="multimodal_terabytes" type="checkbox" />
-                                <span class="rightlinks">
+                                  <span class="rightlinks">
                                     <a href="#"><label for="multimodal_terabytes">
                                          <span class="pubclick">[Abstract+]</span>
                                     </label></a>
-                                </span>
-                                <div class="abstract">
+                                  </span>
+                                  <div class="abstract">
                                     <p class='justify'>A large variety of geospatial data layers is available around the world ranging from remotely-sensed raster data like satellite imagery, digital elevation models, predicted land cover maps, and human-annotated data, to data derived from environmental sensors such as air temperature or wind speed data. A large majority of machine learning models trained on satellite imagery (SatML), however, are designed primarily for optical input modalities such as multi-spectral satellite imagery. To better understand the value of using other input modalities alongside optical imagery in supervised learning settings, we generate augmented versions of SatML benchmark tasks by appending additional geographic data layers to datasets spanning classification, regression, and segmentation. Using these augmented datasets, we find that fusing additional geographic inputs with optical imagery can significantly improve SatML model performance. Benefits are largest in settings where labeled data are limited and in geographic out-of-sample settings, suggesting that multi-modal inputs may be especially valuable for data-efficiency and out-of-sample performance of SatML models. Surprisingly, we find that hard-coded fusion strategies outperform learned variants, with interesting implications for future work.</p>
-                                </div>
+                                  </div>
                             </td>
                         </tr>
                         <br>
@@ -334,6 +338,81 @@
 
       </div>
 
+      <!-- Recent Reads Sidebar -->
+      <div id="recent-reads-sidebar" class="recent-reads-sidebar">
+        <div class="sidebar-header">
+          <h3>Recent Reads</h3>
+          <button id="close-sidebar" class="close-sidebar" aria-label="Close sidebar">&times;</button>
+        </div>
+        <div class="sidebar-content">
+          <!-- December 2025 -->
+          <div class="reading-month">
+            <h4 class="month-header">December 2025</h4>
+            <a href="https://www.goodreads.com/book/isbn/9780593237144" target="_blank" class="book-entry-link">
+            <div class="book-entry" data-book-title="There Is No Place for Us" data-book-author="Brian Goldstone">
+              <div class="book-cover">
+                <img class="book-cover-img" src="img/book-there-is-no-place-for-us.jpg" alt="There Is No Place for Us cover">
+              </div>
+              <div class="book-info">
+                <h5 class="book-title">There Is No Place for Us</h5>
+                <p class="book-author">Brian Goldstone</p>
+                <p class="book-description">A landmark work of journalism exposing the dramatic rise of the working homeless in cities across America, told through the stories of five Atlanta families.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <!-- October 2025 -->
+          <div class="reading-month">
+            <h4 class="month-header">October 2025</h4>
+            <a href="https://www.goodreads.com/book/show/176444106-abundance" target="_blank" class="book-entry-link">
+            <div class="book-entry" data-book-title="Abundance" data-book-author="Ezra Klein and Derek Thompson">
+              <div class="book-cover">
+                <img class="book-cover-img" src="img/book-abundance.png" alt="Abundance cover">
+              </div>
+              <div class="book-info">
+                <h5 class="book-title">Abundance</h5>
+                <p class="book-author">Ezra Klein and Derek Thompson</p>
+                <p class="book-description">An exploration of how to build a more abundant future through policy, technology, and collective action.</p>
+              </div>
+            </div>
+            </a>
+            <a href="https://www.goodreads.com/book/show/49814857-the-1619-project" target="_blank" class="book-entry-link">
+            <div class="book-entry" data-book-title="The 1619 Project" data-book-author="Nikole Hannah-Jones">
+              <div class="book-cover">
+                <img class="book-cover-img" src="img/book-1619-project.jpg" alt="The 1619 Project cover">
+              </div>
+              <div class="book-info">
+                <h5 class="book-title">The 1619 Project</h5>
+                <p class="book-author">Nikole Hannah-Jones</p>
+                <p class="book-description">A reframing of American history that places slavery and its continuing legacy at the center of our national narrative.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <!-- September 2025 -->
+          <div class="reading-month">
+            <h4 class="month-header">September 2025</h4>
+            <a href="https://www.goodreads.com/book/show/108428.Are_Prisons_Obsolete_" target="_blank" class="book-entry-link">
+            <div class="book-entry" data-book-title="Are Prisons Obsolete?" data-book-author="Angela Y. Davis">
+              <div class="book-cover">
+                <img class="book-cover-img" src="img/book-are-prisons-obsolete.jpg" alt="Are Prisons Obsolete? cover">
+              </div>
+              <div class="book-info">
+                <h5 class="book-title">Are Prisons Obsolete?</h5>
+                <p class="book-author">Angela Y. Davis</p>
+                <p class="book-description">A critical examination of the prison system and a call for its abolition, arguing that prisons perpetuate social problems rather than solve them.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlay for closing sidebar -->
+      <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
       <script>
         (function() {
           const photoTooltip = document.querySelector('.photo-tooltip');
@@ -371,6 +450,48 @@
               tooltipText.style.top = y + 'px';
             }
           }
+        })();
+
+        // Recent Reads Sidebar functionality
+        (function() {
+          const recentReadsLink = document.getElementById('recent-reads-link');
+          const sidebar = document.getElementById('recent-reads-sidebar');
+          const closeSidebar = document.getElementById('close-sidebar');
+          const overlay = document.getElementById('sidebar-overlay');
+
+          function openSidebar() {
+            sidebar.classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+
+          function closeSidebarFunc() {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+
+          if (recentReadsLink) {
+            recentReadsLink.addEventListener('click', function(e) {
+              e.preventDefault();
+              openSidebar();
+            });
+          }
+
+          if (closeSidebar) {
+            closeSidebar.addEventListener('click', closeSidebarFunc);
+          }
+
+          if (overlay) {
+            overlay.addEventListener('click', closeSidebarFunc);
+          }
+
+          // Close on Escape key
+          document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && sidebar.classList.contains('open')) {
+              closeSidebarFunc();
+            }
+          });
         })();
       </script>
   </body>

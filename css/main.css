@@ -33,6 +33,7 @@ header {
     margin-bottom: 25px;
     border-bottom: 2px solid #e8e8e8;
     padding-bottom: 15px;
+    position: relative;
 }
 
 h1 {
@@ -235,7 +236,7 @@ h2 {
     color: #B71C1C;
     text-decoration: underline;
     cursor: pointer;
-} 
+  } 
 #contact {
     clear: both;        /* Forces this section to sit below the floated image */
     margin-top: 30px;   /* Adds space between your bio text and the links */
@@ -361,13 +362,13 @@ a {
     text-decoration: none;
     transition: all 0.2s ease;
 }
-a:hover {
+      a:hover {
     background-color: #B71C1C;
     color: white;
     padding: 2px 4px;
     margin: -2px -4px;
     border-radius: 3px;
-}
+      }
 
 .hov {
     color: #212121;
@@ -586,5 +587,247 @@ input[type=checkbox] {
         display: block;
         margin: 4px 0;
         width: fit-content;
+    }
+}
+
+/* Recent Reads Feature */
+.reading-section {
+    margin-bottom: 0;
+    text-align: right;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.recent-reads-link {
+    font-size: 0.9em;
+    color: #666;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+.recent-reads-link:hover {
+    color: #B71C1C;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .reading-section {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Sidebar Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Recent Reads Sidebar */
+.recent-reads-sidebar {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 400px;
+    max-width: 90vw;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -2px 0 20px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    font-family: "Iowan Old Style", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+.recent-reads-sidebar.open {
+    right: 0;
+}
+
+.sidebar-header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.close-sidebar {
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+    line-height: 1;
+}
+
+.close-sidebar:hover {
+    color: #B71C1C;
+}
+
+.sidebar-content {
+    padding: 25px;
+}
+
+.reading-month {
+    margin-bottom: 40px;
+}
+
+.reading-month:last-child {
+    margin-bottom: 0;
+}
+
+.month-header {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+    letter-spacing: 0.3px;
+}
+
+.book-entry-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+    padding: 5px;
+    margin: -5px;
+}
+
+.book-entry-link:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.book-entry-link:hover .book-title {
+    color: #B71C1C;
+}
+
+.book-entry {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.book-entry-link:last-child .book-entry {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.book-cover {
+    flex-shrink: 0;
+    width: 100px;
+    height: 150px;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-cover:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.book-title {
+    margin: 0 0 6px 0;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.3;
+}
+
+.book-author {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+.book-description {
+    margin: 0 0 12px 0;
+    font-size: 0.85em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+
+/* Mobile responsiveness for sidebar */
+@media (max-width: 767px) {
+    .recent-reads-sidebar {
+        width: 85vw;
+        right: -85vw;
+    }
+
+    .book-entry {
+        flex-direction: column;
+    }
+
+    .book-cover {
+        width: 80px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    .book-info {
+        text-align: center;
+    }
+
+    .book-description {
+        text-align: left;
     }
 }
