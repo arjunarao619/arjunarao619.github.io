@@ -38,7 +38,7 @@
 
   <!-- Local styles -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="css/main.css?v=2">
+  <link rel="stylesheet" href="css/main.css?v=10">
 
   </head>
 
@@ -87,81 +87,40 @@
 
 
 
-            <div class="items">
-                <h2>Research Experience</h2>             
-                <table>
-                <tr>
-                    <td class="exp">
-                        <strong>University of Colorado Boulder</strong><br>
-                        <a href="https://www.colorado.edu/cs/" target="_blank">Department of Computer Science</a><br>
-                        Computer Science PhD Student<br>
-                    </td>
-                    <td class="date">Sep 2024 &ndash; Present</td>
-                </tr>
-
-                <tr>
-                    <td class="exp">
-                        <strong>Orbital Sidekick</strong><br>
-                        <a href="https://www.orbitalsidekick.com/" target="_blank">Machine Learning Engineer</a><br>
-                    </td>
-                    <td class="date">Jun 2022 &ndash; Aug 2024</td>
-                </tr>
-
-                <tr>
-                    <td class="exp">
-                        <strong>NASA Jet Propulsion Laboratory</strong><br>
-                        <a href="https://ml.jpl.nasa.gov" target="_blank">Machine Learning & Instrument Autonomy Group</a><br>
-                        Summer Research Intern: Caltech <a href="https://sfp.caltech.edu/programs/surfjpl" target="_blank">SURF@JPL</a> <br>
-                    </td>
-                    <td class="date">Jun 2021 &ndash; Aug 2021</td>
-                </tr>
-                
-                <tr>
-                    <td class="exp">
-                        <strong>The Chinese University of Hong Kong</strong><br>
-                        <a href="https://www.se.cuhk.edu.hk/" target="_blank">Network Science and Optimization Laboratory</a><br>
-                        Advisor: <a href="https://www1.se.cuhk.edu.hk/~htwai/" target="_blank">Prof. Hoi-To Wai</a><br>
-                        Winter + Fall Research Intern | Topic: <span class="tooltip">Decentralized Optimization <span class="tooltiptext">In decentralized <i class = 'darkit'>consensus</i> optimization, 
-                            data is partitioned <i class='darkit'>privately</i> among \(\mathbb{N}\) workers, and the goal is to minimize each worker's objective function 
-                            \(f_{i}(\theta)\) while ensuring that \(\mathbb{N}\) workers agree about the underlying distribution of \(\theta\). 
-                            <u class='udark'>The catch:</u> \(\mathbb{N}\) workers are distributed over a sparse graph topology, and can only communicate with immidiate neighbours. 
-                            Applications include <a href='https://dl.acm.org/doi/10.1561/2200000051' class = "urlnew" target="_blank">sensor networks</a> and <a class="urlnew" href="https://arxiv.org/abs/1907.09356" target="_blank">privacy preserving machine learning</a>.</span></span>
-                    </td>
-                    <td class="date">Nov 2020 &ndash; May 2021</td>
-                </tr>
-
-                <tr>
-                    <td class="exp">
-                        <strong>The Chinese University of Hong Kong</strong><br>
-                        <a href="https://www.cse.cuhk.edu.hk/" target="_blank">Department of Computer Science and Engineering</a><br>
-                        Advisor: <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Prof. Bei Yu</a><br>
-                        Summer Research Intern | Topic: <span class="tooltip">Adversarial Robustness<span class="tooltiptext">Adversarial Examples, which can better be visualized as imperceptible ‘distribution’ shifts in data are a natural consequence 
-                            of the dimensionality gap between inputs and linear models on which
-                            high-dimensional inputs are trained on. They generalize across different architectures, and can be used
-                            in a ‘black-box’ fashion to threaten real-world deep learning models.  The most common strategy to defend against
-                            test-time attacks has been to train models on adversarial data, thus ensuring some ‘robustness‘ against
-                            standard attacks. </span></span>
-                        
-                    </td>
-                    <td class="date">May 2020 &ndash; Sep 2021</td>
-                </tr>
-
-                </table>
-            </div>
-
-
-
-
-            <div class="items publications-section" style="margin-bottom: 32px;">
-                    <h2>Publications</h2>
-                    <table>                        
+            <div class="items publications-section" style="margin-bottom: 30px;">
+                    <h2>Recent Publications</h2>
+                    <table>
                         <tr>
-                        <td class="exp1">     
+                        <td class="exp1">
                               <strong>Arjun Ashok Rao</strong>,
-                                <a href="https://marcrusswurm.com/">Marc Rußwurm</a>,
-                                <a href="https://konstantinklemmer.github.io/">Konstantin Klemmer</a>,
-                                <a href="https://www.estherrolf.com/">Esther Rolf</a>,
-                                <strong>"Measuring the Intrinsic Dimension of Earth Representations"</strong>, Under Review.
+                              <a href="">Ruth Crasto</a>,
+                              <a href="">Tessa Ooms</a>,
+                              <a href="https://davidrolnick.com/">David Rolnick</a>,
+                              <a href="https://konstantinklemmer.github.io/">Konstantin Klemmer</a>,
+                              <a href="https://marcrusswurm.com/">Marc Rußwurm</a>,
+                              <strong>"Localized, High-resolution Geographic Representations with Slepian Functions"</strong>, Preprint.
+                              <br>
+                              <a href="https://arxiv.org/abs/2602.00392">[Paper]</a>
+                              <input checked="checked" id="slepian_preprint" type="checkbox" />
+                              <span class="rightlinks">
+                                <a href="#"><label for="slepian_preprint">
+                                  <span class="pubclick">[Abstract+]</span>
+                                </label></a>
+                              </span>
+                              <div class="abstract">
+                                <p class='justify'>Geographic data is fundamentally local, with patterns clustering in specific areas like population centers and coastlines. Current machine learning models distribute representational capacity uniformly across the globe, limiting performance at fine-grained resolutions needed for localized work. We propose using spherical Slepian functions to build a geographic location encoder that concentrates computational resources within regions of interest while scaling efficiently to high resolutions. For applications requiring broader geographic context, we introduce a hybrid approach combining Slepian and Spherical Harmonic functions that balances local-global performance while maintaining safety at poles and preserving spherical-surface distances. Testing across five tasks involving classification, regression, and image-enhanced prediction shows our Slepian-based encodings outperform existing methods and remain effective across various neural network designs.</p>
+                              </div>
+                        </td>
+                        </tr>
+                        <br>
+
+                        <tr>
+                        <td class="exp1">
+                              <strong>Arjun Ashok Rao</strong>,
+                              <a href="https://marcrusswurm.com/">Marc Rußwurm</a>,
+                              <a href="https://konstantinklemmer.github.io/">Konstantin Klemmer</a>,
+                              <a href="https://www.estherrolf.com/">Esther Rolf</a>,
+                              <strong>"Measuring the Intrinsic Dimension of Earth Representations"</strong>, ICLR 2026.
                                 <br>
                                 <a href="https://arxiv.org/abs/2511.02101">[Paper]</a>
                                 <input checked="checked" id="intrinsic_dimension" type="checkbox" />
@@ -229,111 +188,75 @@
                                   </div>
                                   
                             </td>
-                            
-                        </tr>
 
-                        <!-- 2021 AGU Fall Meeting - Future Orbital Imaging Spectrometers -->
-                        <tr>
-                            <td class="exp1">    
-                                  <a href="http://www.jakehlee.com/">Jake Lee</a>, 
-                                  <a href="https://ml.jpl.nasa.gov/people/mauceri/mauceri.html">Steffen Mauceri</a>,
-                                  <a href="https://scholar.google.com/citations?user=dRn_bawAAAAJ&hl=en">Sharmita Dey</a>,
-                                  <strong>Arjun Ashok Rao</strong>,
-                                  <a href="https://acsweb.ucsd.edu/~salimoha/">Ryan Alimo</a>,
-                                  <a href="https://scholar.google.com/citations?user=RO6PeBgAAAAJ&hl=en">Andrew K Thorpe</a>,
-                                  <a href="https://scholar.google.com/citations?user=uT1BwvcAAAAJ&hl=en">Siraput Jongaramrungruang</a>,
-                                  <a href="https://scienceandtechnology.jpl.nasa.gov/people/r_duren">Riley Duren</a>,
-                                  <strong>"Methane Plume Detection with Future Orbital Imaging Spectrometers"</strong>, American Geophysical Union, Fall Meeting 2021 
-                                  <a href="https://www.essoar.org/doi/abs/10.1002/essoar.10509499.1">[Poster]</a>
-                                  <input checked="checked" id="orb_JPL" type="checkbox" />
-                                  <span class="rightlinks">
-                                    <a href="#"><label for="orb_JPL">
-                                         <span class="pubclick">[Abstract+]</span>
-                                    </label></a>
-                                  </span>
-                                  <div class="abstract">
-                                    <p class='justify'> Despite methane's important role as a greenhouse gas, the contribution of individual sources to rising methane concentrations in Earth's atmosphere is poorly understood. This is in part due to the lack of frequent measurements on a global scale, required to accurately quantify fugitive methane sources. Future missions such as Earth Surface Mineral Dust Source Investigation (EMIT), Surface Biology and Geology (SBG), and Carbon Mapper promise to provide global, spatially resolved spectroscopy observations that will allow us to map methane sources. However, the detection and attribution of individual methane sources is challenged by retrieval artifacts and noise in retrieved methane concentrations. Additionally, manual methane plume detection is not scalable to global space-borne observations due to the sheer volume of data generated. A robust automated system to detect methane plumes is needed.
-                                        We evaluated the performance and sensitivity of several methane plume detection methods on 30m to 60m hyperspectral imagery, downsampled from airborne campaigns with AVIRIS-NG. To aid the training of the plume detection models, we explored supplementing downsampled airborne imagery with Large Eddy Simulations (LES) of methane plumes. We compared baseline methods such as thresholding and random forest classifiers, as well as state-of-the-art deep learning methods such as convolutional neural networks (CNNs) for classification and conditional adversarial networks (pix2pix) for plume segmentation. </p>
-                                  </div>
-                                  
-                            </td>
-                            
-                        </tr>
-
-                        <!-- 2021 APSIPA -->
-                        <tr>
-                            <td class="exp1">     
-                                  <strong>Arjun Ashok Rao</strong>,
-                                  <a href="https://www1.se.cuhk.edu.hk/~htwai/index.html">Hoi-To Wai</a>,
-                                  <strong>"An Empirical Study on Compressed Decentralized Stochastic Gradient Algorithms with Overparameterized Models"</strong>, Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA), 2021. 
-                                  <a href="https://arxiv.org/abs/2110.04523">[Paper]</a>
-                                  <input checked="checked" id="decensgd_apsipa" type="checkbox" />
-                                  <span class="rightlinks">
-                                    <a href="#"><label for="decensgd_apsipa">
-                                         <span class="pubclick">[Abstract+]</span>
-                                    </label></a>
-                                  </span>
-                                  <div class="abstract">
-                                    <p class='justify'> This paper considers decentralized optimization with application to machine learning on graphs. The growing size of neural network (NN) models has led prior work surrounding decentralized stochastic gradient algorithms which support communication compression. On the other hand, recent works have demonstrated the favorable convergence and generalization properties of overparameterized NNs. In this work, we present an empirical analysis on the performance of compressed decentralized stochastic gradient (DSG) algorithms with overparameterized NNs. Through simulations on an MPI network environment, we observe that the convergence rates of popular compressed DSG algorithms are robust to the size of NNs. Our findings suggest a gap between theories and practice of the compressed DSG algorithms in the existing literature. </p>
-                                  </div>
-                                  
-                            </td>
-                            
-                        </tr>
-
-                        <!-- 2020 ICCAD -->
-                        <tr>
-                        <td class="exp1">     
-                              <a href="http://qisunchn.top/">Qi Sun</a>,
-                              <strong>Arjun Ashok Rao</strong>,
-                              <a href="">Xufeng Yao</a>,
-                              <a href="http://www.cse.cuhk.edu.hk/~byu/index.html">Bei Yu</a>,
-                              <a href="http://www.ece.mtu.edu/faculty/shiyan/">Shiyan Hu</a>,
-                              <strong>"Counteracting Adversarial Attacks in Autonomous Driving"</strong>, IEEE/ACM International Conference on Computer-Aided Design (ICCAD), Nov. 2–5, 2020. 
-                              <a href="http://www.cse.cuhk.edu.hk/~byu/papers/C105-ICCAD2020-Stereo.pdf">[Paper]</a> <a href="http://www.cse.cuhk.edu.hk/~byu/papers/C105-ICCAD2020-Stereo-slides.pdf">[Slides]</a>
-                              <input checked="checked" id="robust_iccad" type="checkbox" />
-                              <span class="rightlinks">
-                                <a href="#"><label for="robust_iccad">
-                                     <span class="pubclick">[Abstract+]</span>
-                                </label></a>
-                              </span>
-                              <div class="abstract">
-                                <p class='justify'>Autonomous system operation requires real-time processing of measurement data which often contain significant
-                                uncertainties and noise. Adversarial attacks have been widely studied to simulate these perturbations in recent years. To counteract 
-                                these attacks in autonomous systems, a novel defense method is proposed in this paper. </p>
-                                
-                                <p class='justify'>A stereo-regularizer is proposed to guide the
-                                model to learn the implicit relationship between the left and right
-                                images of the stereo-vision system. Univariate and multivariate
-                                functions are adopted to characterize the relationships between the
-                                two input images and the object detection model. The regularizer is
-                                then relaxed to its upper bound to improve adversarial robustness.
-                                Furthermore, the upper bound is approximated by the remainder
-                                of its Taylor expansion to improve the <i>local smoothness</i> of the loss
-                                surface. The model parameters are trained via adversarial training with the novel regularization term. </p>
-                                
-                                <p class='justify'>Our method exploits basic
-                                knowledge from the physical world, i.e., the mutual constraints of
-                                the two images in the stereo-based system. As such, outliers can be
-                                detected and defended with high accuracy and efficiency. Numerical
-                                experiments demonstrate that the proposed method offers superior
-                                performance when compared with traditional adversarial training
-                                methods in state-of-the-art stereo-based 3D object detection models
-                                for autonomous vehicles.</p>
-                              </div>
-                              
-                        </td>
-                        
                         </tr>
 
 
 
 
-
-
-
-                        
                     </table>
+            </div>
+
+            <div class="items">
+                <h2>Research Experience</h2>
+                <table>
+                <tr>
+                    <td class="exp">
+                        <strong>University of Colorado Boulder</strong><br>
+                        <a href="https://www.colorado.edu/cs/" target="_blank">Department of Computer Science</a><br>
+                        Computer Science PhD Student<br>
+                    </td>
+                    <td class="date">Sep 2024 &ndash; Present</td>
+                </tr>
+
+                <tr>
+                    <td class="exp">
+                        <strong>Orbital Sidekick</strong><br>
+                        <a href="https://www.orbitalsidekick.com/" target="_blank">Machine Learning Engineer</a><br>
+                    </td>
+                    <td class="date">Jun 2022 &ndash; Aug 2024</td>
+                </tr>
+
+                <tr>
+                    <td class="exp">
+                        <strong>NASA Jet Propulsion Laboratory</strong><br>
+                        <a href="https://ml.jpl.nasa.gov" target="_blank">Machine Learning & Instrument Autonomy Group</a><br>
+                        Summer Research Intern: Caltech <a href="https://sfp.caltech.edu/programs/surfjpl" target="_blank">SURF@JPL</a> <br>
+                    </td>
+                    <td class="date">Jun 2021 &ndash; Aug 2021</td>
+                </tr>
+
+                <tr>
+                    <td class="exp">
+                        <strong>The Chinese University of Hong Kong</strong><br>
+                        <a href="https://www.se.cuhk.edu.hk/" target="_blank">Network Science and Optimization Laboratory</a><br>
+                        Advisor: <a href="https://www1.se.cuhk.edu.hk/~htwai/" target="_blank">Prof. Hoi-To Wai</a><br>
+                        Winter + Fall Research Intern | Topic: <span class="tooltip">Decentralized Optimization <span class="tooltiptext">In decentralized <i class = 'darkit'>consensus</i> optimization,
+                            data is partitioned <i class='darkit'>privately</i> among \(\mathbb{N}\) workers, and the goal is to minimize each worker's objective function
+                            \(f_{i}(\theta)\) while ensuring that \(\mathbb{N}\) workers agree about the underlying distribution of \(\theta\).
+                            <u class='udark'>The catch:</u> \(\mathbb{N}\) workers are distributed over a sparse graph topology, and can only communicate with immidiate neighbours.
+                            Applications include <a href='https://dl.acm.org/doi/10.1561/2200000051' class = "urlnew" target="_blank">sensor networks</a> and <a class="urlnew" href="https://arxiv.org/abs/1907.09356" target="_blank">privacy preserving machine learning</a>.</span></span>
+                    </td>
+                    <td class="date">Nov 2020 &ndash; May 2021</td>
+                </tr>
+
+                <tr>
+                    <td class="exp">
+                        <strong>The Chinese University of Hong Kong</strong><br>
+                        <a href="https://www.cse.cuhk.edu.hk/" target="_blank">Department of Computer Science and Engineering</a><br>
+                        Advisor: <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Prof. Bei Yu</a><br>
+                        Summer Research Intern | Topic: <span class="tooltip">Adversarial Robustness<span class="tooltiptext">Adversarial Examples, which can better be visualized as imperceptible 'distribution' shifts in data are a natural consequence
+                            of the dimensionality gap between inputs and linear models on which
+                            high-dimensional inputs are trained on. They generalize across different architectures, and can be used
+                            in a 'black-box' fashion to threaten real-world deep learning models.  The most common strategy to defend against
+                            test-time attacks has been to train models on adversarial data, thus ensuring some 'robustness' against
+                            standard attacks. </span></span>
+
+                    </td>
+                    <td class="date">May 2020 &ndash; Sep 2021</td>
+                </tr>
+
+                </table>
             </div>
 
       </div>

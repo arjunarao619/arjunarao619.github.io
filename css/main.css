@@ -74,9 +74,6 @@ h2 {
     margin-bottom: 0.6rem !important;
 }
 
-.publications-section h2 {
-    margin-bottom: 0 !important;
-}
 #photo {
     margin-top: 0;
     margin-bottom: 20px;
@@ -309,12 +306,21 @@ h2 {
 }
 
 /* Publications specific spacing */
-.publications-section table {
-    margin-top: 0;
+.publications-section h2 {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
-.publications-section table tr:first-child td {
-    padding-top: 0;
+.publications-section > table,
+.publications-section table {
+    margin-top: -50px !important;
+    border-spacing: 0 !important;
+}
+
+.publications-section table tr:first-child td,
+.publications-section table tbody tr:first-child td,
+.publications-section table tr:first-of-type td {
+    padding-top: 0 !important;
 }
 
 .items table .exp1 {
@@ -521,6 +527,7 @@ span.rightlinks {
 input[type=checkbox] {
     display: none;
 }
+
 
 
 
