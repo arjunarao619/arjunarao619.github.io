@@ -168,11 +168,6 @@ h2 {
 }
 
 #about p:nth-of-type(2) {
-    clear: left; /* Second paragraph starts below the image */
-    width: 100%; /* Full width */
-}
-
-#about p:nth-of-type(3) {
     clear: left; /* Service paragraph starts below the image */
     width: 100%; /* Full width */
     padding: 18px 24px;
