@@ -531,6 +531,16 @@ input[type=checkbox] {
     transition-delay: 0s;
 }
 
+/* Publication venue (rendered on its own line under the title).
+   Tiny size bump + slight weight to draw the eye without shouting. */
+.pub-venue {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 1.04em;
+    letter-spacing: 0.01em;
+}
+
 /* Publication badges */
 .pub-badge {
     display: inline-block;
