@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arjun Ashok Rao</title>
-    <meta name="description" content="Arjun Rao is a PhD student at The University of Colorado Boulder. His research interests include machine learning for remote sensing, and implicit neural representations." />
+    <meta name="description" content="Arjun Rao is a Computer Science PhD student at the University of British Columbia, affiliated with the Vector Institute and the Pioneer Centre for AI. His research focuses on representation learning for spatial and geographic applications." />
     <meta name="author" content="Arjun Ashok Rao" />
 
     <!-- Analytics - Google Analytics 4 -->
@@ -37,7 +37,7 @@
 
   <!-- Local styles -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="css/main.css?v=10">
+  <link rel="stylesheet" href="css/main.css?v=13">
 
   </head>
 
@@ -57,12 +57,14 @@
                     <img src="img/arjun_2026.jpg" alt="Arjun Rao">
                 </div>
                 <div id="about">
-                    <p>
-                        I am a Computer Science PhD student at the University of Colorado Boulder. I am broadly interested in representation learning for spatial and geographic applications. 
-                      Before graduate school, I worked as a Machine Learning Scientist at Orbital Sidekick in San Francisco. I was a research intern at <a href="https://www.jpl.nasa.gov/" target="_blank">NASA Jet Propulsion Laboratory's</a> <a href="https://ml.jpl.nasa.gov/" target="_blank">Machine Learning and Instrument Autonomy Group</a>, where I worked on improving robustness of machine learning models on-board large-scale airborne and spaceborne <a href="https://www.jpl.nasa.gov/missions/airborne-visible-infrared-imaging-spectrometer-next-generation-aviris-ng" target="_blank" >imaging spectrometers</a> advised by <a href="https://scholar.google.com/citations?user=RO6PeBgAAAAJ&hl=en" target="_blank">Andrew Thorpe</a>  and <a href="https://ml.jpl.nasa.gov/members/steffen-mauceri.html" target="_blank">Steffen Mauceri</a>.
-                        I graduated from <a href="http://cuhk.edu.hk/english/index.html" target="_blank">The Chinese University of Hong Kong</a> majoring in Financial Technology and Computer Science. While at CUHK, I worked on Decentralized Machine Learning at CUHK's Network Science and Optimization Laboratory with <a href="https://www1.se.cuhk.edu.hk/~htwai/" target="_blank">Professor Hoi-To Wai</a>, and Adversarial Robustness with <a href="https://www.cse.cuhk.edu.hk/~byu/" target="_blank">Professor Bei Yu</a>
+                    <p class="bio-paragraph">
+                        I am a Computer Science PhD student at the <a href="https://www.ubc.ca/" target="_blank">University of British Columbia</a> (UBC), affiliated with the <a href="https://vectorinstitute.ai/" target="_blank">Vector Institute</a> and the <a href="https://www.aicentre.dk/" target="_blank">Pioneer Centre for AI</a>. I am broadly interested in representation learning for spatial and geographic applications.
                     </p>
-                    <p>
+                    <p class="bio-paragraph">
+                        Before graduate school, I worked as a Machine Learning Scientist at Orbital Sidekick in San Francisco and interned at the <a href="https://www.jpl.nasa.gov/" target="_blank">NASA Jet Propulsion Laboratory</a>.
+                        I graduated from <a href="http://cuhk.edu.hk/english/index.html" target="_blank">The Chinese University of Hong Kong</a> majoring in Financial Technology and Computer Science.
+                    </p>
+                    <p class="service-paragraph">
                        Service is a major component of my non-research endeavors. Since 2024, I have worked with the <a href="https://www.prisonmathproject.org/" target="_blank">Prison Mathematics Project</a> in the capacity of both a student instructor and an advocate during pre-clemency instructional sessions. I also volunteer at Boulder County Jail's math circle as a volunteer tutor. Since 2021, I have been affiliated with the <a href="https://city.milwaukee.gov/414Life" target="_blank">414LIFE</a> program to end youth violence in Milwaukee, Wisconsin. 
                     </p>
                     <div id="contact">
@@ -70,9 +72,11 @@
                             <a href="ArjunRaoCV.pdf" target="_blank">My CV (11/25)</a>
                             <span class="separator">|</span>
                             <a href="https://scholar.google.com/citations?user=Tl-uRp0AAAAJ&hl=en" target="_blank">Google Scholar</a>
+                            <span class="separator">|</span>
+                            <a href="https://github.com/arjunarao619" target="_blank">GitHub</a>
                         </div>
                         <div class="email1">
-                            raoarjun[at]colorado.edu
+                            arjun.rao[at]ubc.ca
                         </div>
                     </div>
                  
@@ -84,8 +88,33 @@
 
 
             <div class="items publications-section" style="margin-bottom: 30px;">
-                    <h2>Recent Publications</h2>
+                    <h2>Selected Publications</h2>
                     <table>
+                        <tr>
+                        <td class="exp1">
+                              <strong>Arjun Rao</strong>,
+                              <a href="https://sebulo.github.io/">Sebastian Loeschcke</a>,
+                              <a href="https://antofuller.github.io/">Anthony Fuller</a>,
+                              <a href="https://isaac.earth/">Isaac Corley</a>,
+                              <span class="advising-author"><a href="https://langnico.github.io/">Nico Lang</a><sup class="advising-marker" tabindex="0" aria-label="Equal advising">✰<span class="advising-tooltip" role="tooltip">Equal advising</span></sup></span>,
+                              <span class="advising-author"><a href="https://imaginarynumber.net/">Evan Shelhamer</a><sup class="advising-marker" tabindex="0" aria-label="Equal advising">✰<span class="advising-tooltip" role="tooltip">Equal advising</span></sup></span>,
+                              <strong>"Planetary Feature Fields are Scalable Earth Representations"</strong>
+                              <br>
+                              <span class="pub-venue">Preprint, 2026.</span>
+                              <br>
+                              <a href="https://arxiv.org/abs/2609.37784">[Paper]</a>
+                              <input checked="checked" id="planetary_feature_fields" type="checkbox" />
+                              <span class="rightlinks">
+                                <a href="#"><label for="planetary_feature_fields">
+                                  <span class="pubclick">[Abstract+]</span>
+                                </label></a>
+                              </span>
+                              <div class="abstract">
+                                <p class="justify">Satellite observations, precomputed embeddings, and map products describe the same evolving Earth, yet are stored as independent, petabyte-scale data products. Their continued growth calls for compact representations of multiple products while preserving spatial and temporal detail. We introduce Planetary Feature Fields (PFFs), which exploit redundancy across data products by modeling them jointly as continuous functions of space and time at planetary scale. PFFs are spatially local explicit-implicit (hybrid) neural fields. Each field shares a factored feature volume—a decomposition of an explicit 3D grid with smaller factors—across products, while lightweight implicit decoders reconstruct individual products across multiple timesteps. PFFs reconstruct EO products over space and time more accurately than single-product fields at matched compression rates. At 1800× compression relative to the uncompressed source data, reconstructed features retain approximately 90% or more of the performance achieved with the original features on pixel-level segmentation, change detection, and patch-level classification tasks. PFFs can add new timesteps by extending their factored feature volumes and add new products by attaching new decoders, while leaving existing outputs unchanged. PFFs reduce end-to-end feature access latency by an order of magnitude relative to evaluated API and cloud-storage pipelines.</p>
+                              </div>
+                        </td>
+                        </tr>
+
                         <tr>
                         <td class="exp1">
                               <strong>Arjun Rao</strong>,
@@ -110,7 +139,6 @@
                               </div>
                         </td>
                         </tr>
-                        <br>
 
                         <tr>
                         <td class="exp1">
@@ -136,7 +164,6 @@
                               </div>
                         </td>
                         </tr>
-                        <br>
 
                         <!-- 2025 TerraBytes @ ICML -->
                         <tr>
@@ -163,7 +190,6 @@
                                   </div>
                             </td>
                         </tr>
-                        <br>
 
                         <!-- 2021 AGU Fall Meeting - Methane Plume Detection with LES -->
                         <tr>
@@ -202,11 +228,11 @@
                 <table>
                 <tr>
                     <td class="exp">
-                        <strong>University of Colorado Boulder</strong><br>
-                        <a href="https://www.colorado.edu/cs/" target="_blank">Department of Computer Science</a><br>
+                        <strong>University of British Columbia / Vector Institute</strong><br>
+                        <a href="https://www.cs.ubc.ca/" target="_blank">Department of Computer Science, UBC</a><br>
                         Computer Science PhD Student<br>
                     </td>
-                    <td class="date">Sep 2024 &ndash; Present</td>
+                    <td class="date">Present</td>
                 </tr>
 
                 <tr>
@@ -220,40 +246,9 @@
                 <tr>
                     <td class="exp">
                         <strong>NASA Jet Propulsion Laboratory</strong><br>
-                        <a href="https://ml.jpl.nasa.gov" target="_blank">Machine Learning & Instrument Autonomy Group</a><br>
-                        Summer Research Intern: Caltech <a href="https://sfp.caltech.edu/programs/surfjpl" target="_blank">SURF@JPL</a> <br>
+                        Research Intern, <a href="https://sfp.caltech.edu/programs/surfjpl" target="_blank">Caltech SURF@JPL</a><br>
                     </td>
                     <td class="date">Jun 2021 &ndash; Aug 2021</td>
-                </tr>
-
-                <tr>
-                    <td class="exp">
-                        <strong>The Chinese University of Hong Kong</strong><br>
-                        <a href="https://www.se.cuhk.edu.hk/" target="_blank">Network Science and Optimization Laboratory</a><br>
-                        Advisor: <a href="https://www1.se.cuhk.edu.hk/~htwai/" target="_blank">Prof. Hoi-To Wai</a><br>
-                        Winter + Fall Research Intern | Topic: <span class="tooltip">Decentralized Optimization <span class="tooltiptext">In decentralized <i class = 'darkit'>consensus</i> optimization,
-                            data is partitioned <i class='darkit'>privately</i> among \(\mathbb{N}\) workers, and the goal is to minimize each worker's objective function
-                            \(f_{i}(\theta)\) while ensuring that \(\mathbb{N}\) workers agree about the underlying distribution of \(\theta\).
-                            <u class='udark'>The catch:</u> \(\mathbb{N}\) workers are distributed over a sparse graph topology, and can only communicate with immidiate neighbours.
-                            Applications include <a href='https://dl.acm.org/doi/10.1561/2200000051' class = "urlnew" target="_blank">sensor networks</a> and <a class="urlnew" href="https://arxiv.org/abs/1907.09356" target="_blank">privacy preserving machine learning</a>.</span></span>
-                    </td>
-                    <td class="date">Nov 2020 &ndash; May 2021</td>
-                </tr>
-
-                <tr>
-                    <td class="exp">
-                        <strong>The Chinese University of Hong Kong</strong><br>
-                        <a href="https://www.cse.cuhk.edu.hk/" target="_blank">Department of Computer Science and Engineering</a><br>
-                        Advisor: <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Prof. Bei Yu</a><br>
-                        Summer Research Intern | Topic: <span class="tooltip">Adversarial Robustness<span class="tooltiptext">Adversarial Examples, which can better be visualized as imperceptible 'distribution' shifts in data are a natural consequence
-                            of the dimensionality gap between inputs and linear models on which
-                            high-dimensional inputs are trained on. They generalize across different architectures, and can be used
-                            in a 'black-box' fashion to threaten real-world deep learning models.  The most common strategy to defend against
-                            test-time attacks has been to train models on adversarial data, thus ensuring some 'robustness' against
-                            standard attacks. </span></span>
-
-                    </td>
-                    <td class="date">May 2020 &ndash; Sep 2021</td>
                 </tr>
 
                 </table>

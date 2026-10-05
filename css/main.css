@@ -145,7 +145,7 @@ h2 {
 
 #about {
     margin-top: 0;
-    max-width: 600px;
+    max-width: 100%;
 }
 #about-container {
     margin-top: 15px;
@@ -159,7 +159,7 @@ h2 {
     }
 }
 #about p {
-    text-align: justify;
+    text-align: left;
     margin-top: 0;
     margin-bottom: 14px;
     font-weight: 100;
@@ -167,10 +167,16 @@ h2 {
     line-height: 1.7;
 }
 
-#about p:nth-of-type(2) {
+#about p.bio-paragraph {
+    display: flow-root;
+    text-wrap: pretty;
+}
+
+#about p.service-paragraph {
     clear: left; /* Service paragraph starts below the image */
     width: 100%; /* Full width */
     padding: 18px 24px;
+    box-sizing: border-box;
     margin-top: 12px;
     margin-bottom: 16px;
     background: linear-gradient(135deg, rgba(240, 248, 255, 0.5) 0%, rgba(230, 240, 255, 0.3) 50%, rgba(240, 248, 255, 0.5) 100%);
@@ -182,7 +188,7 @@ h2 {
     transition: all 0.3s ease;
 }
 
-#about p:nth-of-type(3)::before {
+#about p.service-paragraph::before {
     content: "";
     position: absolute;
     top: 0;
@@ -193,13 +199,13 @@ h2 {
     transition: left 0.5s ease;
 }
 
-#about p:nth-of-type(3):hover {
+#about p.service-paragraph:hover {
     border-left-color: rgba(100, 149, 237, 0.7);
     box-shadow: 0 4px 12px rgba(100, 149, 237, 0.15);
     transform: translateX(2px);
 }
 
-#about p:nth-of-type(3):hover::before {
+#about p.service-paragraph:hover::before {
     left: 100%;
 }
 
@@ -308,7 +314,7 @@ h2 {
 
 .publications-section > table,
 .publications-section table {
-    margin-top: -50px !important;
+    margin-top: 12px !important;
     border-spacing: 0 !important;
 }
 
@@ -473,6 +479,48 @@ br {
 }
 
 /* Publication styles */
+.advising-author {
+    white-space: nowrap;
+}
+
+.advising-marker {
+    position: relative;
+    margin-left: 2px;
+    font-size: 0.75em;
+    line-height: 0;
+    cursor: help;
+}
+
+.advising-tooltip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.3;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.advising-marker:hover .advising-tooltip,
+.advising-marker:focus .advising-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.advising-marker:focus-visible {
+    outline: 1px solid #777;
+    outline-offset: 3px;
+}
+
 .abstract {
     padding: 0;
     margin: 1em 0 0 0;
