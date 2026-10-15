@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="864" height="225" viewBox="0 0 864 225" role="img" aria-labelledby="title desc">
+  <title id="title">Earth observation collections reach roughly exabyte scale</title>
+  <desc id="desc">Wilkinson and colleagues, published 2024, estimate 807 petabytes of global Earth observation collections and growth of approximately 100 petabytes per year. Extrapolating two years gives roughly one exabyte in 2026. These collections include replicated data.</desc>
+  <g font-family="Helvetica Neue, Arial, sans-serif">
+    <text x="0" y="40" fill="#666666" font-size="16">Published estimate · 2024</text>
+    <text x="-3" y="128" fill="#171717" font-size="66" font-weight="500" letter-spacing="-3">807 <tspan font-size="36" letter-spacing="-1">PB</tspan></text>
+    <text x="0" y="172" fill="#666666" font-size="17">Global EO collections</text>
+    <text x="373" y="85" text-anchor="middle" fill="#666666" font-size="18">+ ~100 PB / year</text>
+    <path d="M271 113 H476 M467 106 L477 113 L467 120" fill="none" stroke="#aabbb2" stroke-width="1.5"/>
+    <text x="536" y="40" fill="#222222" font-size="16">2026 · estimate</text>
+    <text x="527" y="142" fill="#222222" font-size="113" font-weight="500" letter-spacing="-5">~1 <tspan font-size="66" letter-spacing="-2">EB</tspan></text>
+    <text x="536" y="185" fill="#666666" font-size="17">1 exabyte = 1,000 petabytes</text>
+  </g>
+</svg>
