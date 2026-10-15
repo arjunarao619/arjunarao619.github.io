@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-29T11:56:07.673768</dc:date>
+    <dc:date>2026-10-15T14:12:00.648897</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -54,7 +54,7 @@ L 670.32 197.658462
      <g id="line2d_3"/>
      <g id="text_1">
       <!-- 50 -->
-      <g style="fill: #666666" transform="translate(127.842656 302.276) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(127.842656 302.276) scale(0.105 -0.105)">
        <defs>
         <path id="HelveticaNeue-1c" d="M 3008 3981 
 L 3008 4461 
@@ -154,7 +154,7 @@ z
      <g id="line2d_4"/>
      <g id="text_2">
       <!-- 60 -->
-      <g style="fill: #666666" transform="translate(231.042656 302.276) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(231.042656 302.276) scale(0.105 -0.105)">
        <defs>
         <path id="HelveticaNeue-1d" d="M 2650 3379 
 L 3194 3379 
@@ -215,7 +215,7 @@ z
      <g id="line2d_5"/>
      <g id="text_3">
       <!-- 70 -->
-      <g style="fill: #666666" transform="translate(334.242656 302.276) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(334.242656 302.276) scale(0.105 -0.105)">
        <defs>
         <path id="HelveticaNeue-1e" d="M 3258 3994 
 L 3258 4461 
@@ -243,7 +243,7 @@ z
      <g id="line2d_6"/>
      <g id="text_4">
       <!-- 80 -->
-      <g style="fill: #666666" transform="translate(437.442656 302.276) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(437.442656 302.276) scale(0.105 -0.105)">
        <defs>
         <path id="HelveticaNeue-1f" d="M 992 3360 
 Q 992 3533 1056 3661 
@@ -312,7 +312,7 @@ z
      <g id="line2d_7"/>
      <g id="text_5">
       <!-- 90 -->
-      <g style="fill: #666666" transform="translate(540.642656 302.276) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(540.642656 302.276) scale(0.105 -0.105)">
        <defs>
         <path id="HelveticaNeue-20" d="M 858 1094 
 L 314 1094 
@@ -369,7 +369,7 @@ z
      <g id="line2d_8"/>
      <g id="text_6">
       <!-- 100 -->
-      <g style="fill: #666666" transform="translate(640.923984 302.276) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(640.923984 302.276) scale(0.105 -0.105)">
        <defs>
         <path id="HelveticaNeue-18" d="M 2278 0 
 L 2278 4538 
@@ -393,7 +393,7 @@ z
     </g>
     <g id="text_7">
      <!-- New year: reconstruction score (R² × 100) -->
-     <g style="fill: #171717" transform="translate(278.739492 323.5085) scale(0.105 -0.105)">
+     <g style="fill: #243331" transform="translate(278.739492 323.5085) scale(0.105 -0.105)">
       <defs>
        <path id="HelveticaNeue-35" d="M 493 4570 
 L 493 0 
@@ -952,7 +952,7 @@ L 670.32 261.673846
      <g id="line2d_10"/>
      <g id="text_8">
       <!-- −50 -->
-      <g style="fill: #666666" transform="translate(59.105312 266.671846) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(59.105312 266.671846) scale(0.105 -0.105)">
        <defs>
         <path id="HelveticaNeue-f2" d="M 307 1837 
 L 307 1402 
@@ -977,7 +977,7 @@ L 670.32 197.658462
      <g id="line2d_12"/>
      <g id="text_9">
       <!-- 0 -->
-      <g style="fill: #666666" transform="translate(71.242656 202.656462) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(71.242656 202.656462) scale(0.105 -0.105)">
        <use xlink:href="#HelveticaNeue-17"/>
       </g>
      </g>
@@ -991,7 +991,7 @@ L 670.32 133.643077
      <g id="line2d_14"/>
      <g id="text_10">
       <!-- 50 -->
-      <g style="fill: #666666" transform="translate(65.405312 138.641077) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(65.405312 138.641077) scale(0.105 -0.105)">
        <use xlink:href="#HelveticaNeue-1c"/>
        <use xlink:href="#HelveticaNeue-17" transform="translate(55.59375 0)"/>
       </g>
@@ -1006,7 +1006,7 @@ L 670.32 69.627692
      <g id="line2d_16"/>
      <g id="text_11">
       <!-- 100 -->
-      <g style="fill: #666666" transform="translate(59.567969 74.625692) scale(0.105 -0.105)">
+      <g style="fill: #687470" transform="translate(59.567969 74.625692) scale(0.105 -0.105)">
        <use xlink:href="#HelveticaNeue-18"/>
        <use xlink:href="#HelveticaNeue-17" transform="translate(55.59375 0)"/>
        <use xlink:href="#HelveticaNeue-17" transform="translate(111.1875 0)"/>
@@ -1015,7 +1015,7 @@ L 670.32 69.627692
     </g>
     <g id="text_12">
      <!-- Old years: reconstruction retained (%) -->
-     <g style="fill: #171717" transform="translate(47.868812 251.327578) rotate(-90) scale(0.105 -0.105)">
+     <g style="fill: #243331" transform="translate(47.868812 251.327578) rotate(-90) scale(0.105 -0.105)">
       <defs>
        <path id="HelveticaNeue-36" d="M 851 2285 
 Q 851 2630 940 2966 
@@ -1292,7 +1292,7 @@ z
    </g>
    <g id="line2d_21">
     <defs>
-     <path id="m4d07f276e9" d="M 0 -8 
+     <path id="me7c4365f6e" d="M 0 -8 
 L -1.796112 -2.472136 
 L -7.608452 -2.472136 
 L -2.90617 0.944272 
@@ -1303,10 +1303,10 @@ L 2.90617 0.944272
 L 7.608452 -2.472136 
 L 1.796112 -2.472136 
 z
-" style="stroke: #16766b; stroke-width: 1.1; stroke-linejoin: bevel"/>
+" style="stroke: #424242; stroke-width: 1.1; stroke-linejoin: bevel"/>
     </defs>
     <g clip-path="url(#p7cf441090f)">
-     <use xlink:href="#m4d07f276e9" x="453.881726" y="69.627692" style="fill: #16766b; stroke: #16766b; stroke-width: 1.1; stroke-linejoin: bevel"/>
+     <use xlink:href="#me7c4365f6e" x="453.881726" y="69.627692" style="fill: #424242; stroke: #424242; stroke-width: 1.1; stroke-linejoin: bevel"/>
     </g>
    </g>
    <g id="patch_5">
@@ -1582,11 +1582,11 @@ Q 174.778322 63.877823 174.769111 64.624909
    <g id="patch_9">
     <path d="M 421.663443 84.040331 
 Q 435.489539 77.855317 449.315634 71.670304 
-" style="fill: none; stroke: #16766b; stroke-width: 0.65; stroke-linecap: round"/>
+" style="fill: none; stroke: #424242; stroke-width: 0.65; stroke-linecap: round"/>
    </g>
    <g id="text_17">
     <!-- Train new slices only (ours) -->
-    <g style="fill: #16766b" transform="translate(319.44 99.781846) scale(0.12 -0.12)">
+    <g style="fill: #424242" transform="translate(319.44 99.781846) scale(0.12 -0.12)">
      <defs>
       <path id="HelveticaNeue-Bold-3b" d="M 1453 3725 
 L 1453 0 
@@ -1993,7 +1993,7 @@ z
   </g>
   <g id="text_18">
    <!-- PFF-VM · mean across 3 regions -->
-   <g style="fill: #666666" transform="translate(82.08 18.07) scale(0.1 -0.1)">
+   <g style="fill: #687470" transform="translate(82.08 18.07) scale(0.1 -0.1)">
     <defs>
      <path id="HelveticaNeue-3d" d="M 2298 0 
 L 3923 4570 
